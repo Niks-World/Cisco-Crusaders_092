@@ -17,7 +17,7 @@ body{
     /* margin: 0; */
 }
 
-
+/* banner 1 mini  */
 #banne1mini{
     width: 100%;
     border: 1px solid red;
@@ -37,3 +37,59 @@ body{
     /* box-sizing: 100px; */
     border: 1px solid red;
 }
+
+/*  No cost emi  mini below colum */
+
+.custom-icon {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+}
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    /* border: 1px solid red; */
+
+    
+}
+.feature-item:last-child {
+    border-right: none;
+    /* border: 1px solid red; */
+
+}
+.feature-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3643BA;
+    /* border: 1px solid red; */
+}
+.feature-link:hover {
+    text-decoration: underline;
+  
+
+}
+.ml-2{
+    border: 1px solid red;
+    /* position: relative;
+    left: 40px;
+    border-radius: 40%; */
+    background-color: aliceblue;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 40px; */
+    position: relative;
+    left: 40px;
+}
+
