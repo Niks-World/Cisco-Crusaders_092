@@ -1,9 +1,39 @@
+/* style Css  will be here  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* upper space is for importing font or icon etc.. */
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
 }
 
 body{
-    margin: 0;
+    /* margin: 0; */
+}
+
+
+#banne1mini{
+    width: 100%;
+    border: 1px solid red;
+
+    margin-top: 12px ;
+    margin-bottom: 12px;
+    padding: 20px 20px 20px 20px;
+}
+#banne1mini > .container > .row{
+    border: 1px solid red;
+    width: 1400.800px;
+    height: 228.400px;
+
+}
+
+#banne1mini > .container > .row> .col > p{
+    /* box-sizing: 100px; */
+    border: 1px solid red;
 }
