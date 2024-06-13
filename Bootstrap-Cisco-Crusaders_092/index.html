@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Example</title>
+    <title>Navbar</title>
     
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             let searchText=document.getElementById("search-text");
             setInterval(() => {
-                searchText.placeholder = searchText.placeholder === "Chaitali" ? "bhalekari text" : "Chaitali";
+                searchText.placeholder = searchText.placeholder === "Search for " ? "bhalekari text" : "Chaitali";
             }, 3000);
         });
     </script>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
         body {
-    font-family: Arial, sans-serif;
+    margin: 0px;
 }
 
 .navbar {
@@ -24,7 +30,7 @@
     align-items: center;
     background-color: #e5e7eb;
     padding: 0 16px;
-    height: 100px; /* Doubled the height */
+    height: 100px;
 }
 
 .left-section {
@@ -101,23 +107,16 @@
 <body>
     <nav class="navbar">
         <div class="left-section">
-            <!-- Menu Icon -->
             <div class="menu-icon">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </div>
-
-            <!-- All Sports Text -->
             <p class="all-sports-text">ALL SPORTS</p>
-
-            <!-- Logo Image -->
             <div class="logo">
-                <img src="your-logo-url-here.png" alt="Logo">
+                <img src="logo.jpg" alt="Logo">
             </div>
         </div>
-
-        <!-- Search Bar -->
         <div class="search-bar">
             <input id="search-text" type="text" placeholder="search for">
             <button class="search-button">
@@ -126,42 +125,34 @@
                 </svg>
             </button>
         </div>
-
-        <!-- Icons with Text -->
         <div class="right-section">
-            <!-- Sign In -->
+            <div class="icon-text">
+                <span>Delivery Location</span>
+            </div>
             <div class="icon-text">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A6.978 6.978 0 0112 15c1.657 0 3.176.576 4.379 1.529M15 10a3 3 0 10-6 0 3 3 0 006 0zM15 10v5a2 2 0 11-4 0v-5m-6 9h12a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                 </svg>
                 <p>Sign In</p>
             </div>
-
-            <!-- My Store -->
             <div class="icon-text">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18a2 2 0 012 2v6a2 2 0 01-2 2h-6l-2 5-2-5H3a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
                 </svg>
                 <p>My Store</p>
             </div>
-
-            <!-- Support -->
             <div class="icon-text">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636A9 9 0 015.636 18.364m0-13.728a9 9 0 1112.728 12.728A9 9 0 015.636 4.636z"></path>
                 </svg>
                 <p>Support</p>
             </div>
-
-            <!-- Wishlist -->
             <div class="icon-text">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21a9 9 0 0118 0M9 8a6 6 0 100-12 6 6 0 000 12zm0 4a6 6 0 100 12 6 6 0 000-12zm9-4a6 6 0 100-12 6 6 0 000 12zm0 4a6 6 0 100 12 6 6 0 000-12z"></path>
                 </svg>
                 <p>Wishlist</p>
             </div>
-
-            <!-- Cart -->
             <div class="icon-text">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2m.6 8a1 1 0 001 1h12a1 1 0 001-1l1-5H6.2m-1.2 0h1.2M8 9h8M9 13h6M12 5v1m0 4v6"></path>
