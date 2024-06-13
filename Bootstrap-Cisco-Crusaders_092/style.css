@@ -1,3 +1,371 @@
+
+/* style Css  will be here  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* upper space is for importing font or icon etc.. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 , h2 , h3 , h4 , h5 , h6 ,p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+/* Nav bar  */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 0 16px;
+    height: 100px; /* Doubled the height */
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-icon .icon {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+.all-sports-text {
+    font-size: 18px;
+    color: black;
+}
+
+.logo img {
+    height: auto;
+    width: 144px;
+    /* border: 2px solid blue; */
+    margin-bottom: 20px;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #d1d5db;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-button .icon {
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-text {
+    text-align: center;
+}
+
+.icon-text .icon {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+.icon-text p {
+    font-size: 12px;
+    color: black;
+    margin-top: 4px;
+}
+
+/* NEW */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.all-sports-text {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 100px;
+    width: 1005;
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/* banner 1 mini  */
+#banne1mini{
+    /* width: %; */
+    border: 1px solid red;
+
+    margin-top: 12px ;
+    margin-bottom: 12px;
+    padding: 20px 20px 20px 20px;
+}
+#banne1mini > .container >.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banne1mini > .container >.row >.col{
+    border: 1px solid red;
+    /* width: 1400.800px;
+    height: 228.400px; */
+
+}
+
+#banne1mini > .container > .row> .col > p{
+    /* box-sizing: 100px; */
+    border: 1px solid red;
+}
+
+/*  No cost emi  mini below colum */
+
+.custom-icon {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+}
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    /* border: 1px solid red; */
+
+    
+}
+.feature-item:last-child {
+    border-right: none;
+    /* border: 1px solid red; */
+
+}
+.feature-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3643BA;
+    /* border: 1px solid red; */
+}
+.feature-link:hover {
+    text-decoration: underline;
+  
+
+}
+.ml-2{
+    border: 1px solid red;
+    /* position: relative;
+    left: 40px;
+    border-radius: 40%; */
+    background-color: aliceblue;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 40px; */
+    position: relative;
+    left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer and our collection */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+.text-sm {
+  font-size: 0.875rem;
+  /* Adjust as needed */
+}
+
+.pb-3 {
+  padding-bottom: 1rem;
+  /* Adjust as needed */
+}
+
+.text-12 {
+  font-size: 0.75rem;
+  /* Adjust as needed */
+}
+
+.md\\:text-14 {
+  font-size: 0.875rem;
+  /* Adjust as needed for medium and above screens */
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  /* Removes underline */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Optional: underline on hover */
+}
+
+@media (min-width: 768px) {
+  .text-12 {
+    font-size: 0.875rem;
+    /* Medium size */
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-12 {
+    font-size: 0.91rem;
+    /* Large size */
+  }
+}
+.full-screen-image {
+width: 10px;
+height: 10px;
+}
+
+@media (min-width: 600px) {
+.full-screen-image {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+}
+=======
  @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
       .text-sm {
