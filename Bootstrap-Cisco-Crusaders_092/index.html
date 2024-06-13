@@ -2,1006 +2,1214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GearUp</title>
-    <link rel="icon" href="https://contents.mediadecathlon.com/b77624/k$cb32b55b59b8a03ee7bb4c65e2c6f2e7/1800x0/772pt902/1544xcr1801/logo-decathlon-2020-nouveau.png?format=auto">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="script" href="./script.js">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="script" href="./script.js">
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            let searchText=document.getElementById("search-text");
-            setInterval(() => {
-                searchText.placeholder = searchText.placeholder === "Trademile" ? "Cycles" : "Hiking Backpacks";
-            }, 500);
-        });
-    </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+    
+
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1473px;
+    }
+  </style>
 </head>
 
 <body>
-
-
-    <!--  navbar -->
-
-    <nav class="navbar">
-        <div class="left-section">
-            <!-- Menu Icon -->
-            <div class="menu-icon">
-                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
-                </svg>
-            </div>
-
-            <!-- All Sports Text -->
-            <p class="all-sports-text">ALL SPORTS</p>
-
-            <!-- Logo Image -->
-            <div class="logo">
-                <img src="./image/GU_logo-removebg-preview.png" height="400px" alt="Logo">
-            </div>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="search-bar">
-            <input id="search-text" type="text" placeholder="search for">
-            <button class="search-button">
-                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M11 19a8 8 0 100-16 8 8 0 000 16zm7-7h.01"></path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Icons with Text -->
-        <div class="right-section">
-            <!-- Sign In -->
-            <div class="icon-text">
-                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5.121 17.804A6.978 6.978 0 0112 15c1.657 0 3.176.576 4.379 1.529M15 10a3 3 0 10-6 0 3 3 0 006 0zM15 10v5a2 2 0 11-4 0v-5m-6 9h12a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
-                    </path>
-                </svg>
-                <p>Sign In</p>
-            </div>
-
-            <!-- My Store -->
-            <div class="icon-text">
-                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h18a2 2 0 012 2v6a2 2 0 01-2 2h-6l-2 5-2-5H3a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
-                </svg>
-                <p>My Store</p>
-            </div>
-
-            <!-- Support -->
-            <div class="icon-text">
-                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M18.364 5.636A9 9 0 015.636 18.364m0-13.728a9 9 0 1112.728 12.728A9 9 0 015.636 4.636z">
-                    </path>
-                </svg>
-                <p>Support</p>
-            </div>
-
-            <!-- Wishlist -->
-            <div class="icon-text">
-                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 21a9 9 0 0118 0M9 8a6 6 0 100-12 6 6 0 000 12zm0 4a6 6 0 100 12 6 6 0 000-12zm9-4a6 6 0 100-12 6 6 0 000 12zm0 4a6 6 0 100 12 6 6 0 000-12z">
-                    </path>
-                </svg>
-                <p>Wishlist</p>
-            </div>
-
-            <!-- Cart -->
-            <div class="icon-text">
-                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h2l.4 2m.6 8a1 1 0 001 1h12a1 1 0 001-1l1-5H6.2m-1.2 0h1.2M8 9h8M9 13h6M12 5v1m0 4v6">
-                    </path>
-                </svg>
-                <p>Cart</p>
-            </div>
-        </div>
-    </nav>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
    
 
-    <div class="floor-0">
-        <div class="">
-            <h2 class=""></h2>
-            <div class="py-2 flex flex-wrap md:px-7 md:py-3 md:flex-nowrap md:justify-around"><a
-                    href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Men" fetchpriority="high" width="305" height="315"
-                                decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1095556/k$52dfe7dbe7264c175c5de737d9ffef8c/defaut.jpg?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1095556/k$52dfe7dbe7264c175c5de737d9ffef8c/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1095556/k$52dfe7dbe7264c175c5de737d9ffef8c/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Men</span></div>
-                    </div>
-                </a><a href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Women" fetchpriority="high" width="305"
-                                height="315" decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1095554/k$56c97290725cc000efacfad937a8476e/defaut.jpg?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1095554/k$56c97290725cc000efacfad937a8476e/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1095554/k$56c97290725cc000efacfad937a8476e/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Women</span></div>
-                    </div>
-                </a><a href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Kids" fetchpriority="high" width="305"
-                                height="315" decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Kids</span></div>
-                    </div>
-                </a><a href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Shoes" fetchpriority="high" width="305"
-                                height="315" decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/defaut.jpg?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Shoes</span></div>
-                    </div>
-                </a><a href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Summer Collection" fetchpriority="high"
-                                width="305" height="315" decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1096344/k$bae38c166a8cebb9da77a55da564fc04/defaut.jpg?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1096344/k$bae38c166a8cebb9da77a55da564fc04/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1096344/k$bae38c166a8cebb9da77a55da564fc04/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Summer Collection</span></div>
-                    </div>
-                </a><a href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Sale" fetchpriority="high" width="305"
-                                height="315" decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Sale</span></div>
-                    </div>
-                </a><a href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Sports Accessories" fetchpriority="high"
-                                width="305" height="315" decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Sports Accessories</span></div>
-                    </div>
-                </a><a href="#" class="w-1/4 max-w-36">
-                    <div class="flex flex-col gap-1 justify-start items-center">
-                        <div class="w-full px-2.5 relative"><img alt="Sports Equipment" fetchpriority="high" width="305"
-                                height="315" decoding="async" data-nimg="1"
-                                srcset="https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&amp;quality=70&amp;f=320x0 1x, https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0 2x"
-                                src="https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&amp;quality=70&amp;f=768x0"
-                                style="color: transparent;"></div>
-                        <div
-                            class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">
-                            <span>Sports Equipment</span></div>
-                    </div>
-                </a></div>
+  <!--  navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand p-2" href="#"> GearUP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">All Sports</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 search-bar">
+        <input id="search-bar" class="form-control mr-sm-2" type="search" placeholder="Search for 'Swimming Caps'"
+          aria-label="Search">
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Delivery Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Wishlist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cart</a>
+        </li>
+      </ul>
+      <div class="dropdown" data-bs-theme="dark">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label color-white" for="flexSwitchCheckDefault">Light</label>
         </div>
+</div>
     </div>
-
-
-  
-
-    <!-- Carousel -->
-
-    <!-- No cost emi col 3 -->
-
-    <div class="container my-2 py-2.85 bg-light">
-        <div class="row text-center">
-            <div class="col-md-4 feature-item">
-                <a class="feature-link" href="#" target="_blank">
-                    <img class="custom-icon mr-2"
-                        src="https://contents.mediadecathlon.com/s1066179/k$a1bad6c9d4b965d79eb8c64c8092fc0b/defaut.png?format=auto&amp;f=969x0?format=auto"
-                        alt="No Cost EMI Available">
-                    <span>No Cost EMI Available</span>
-
-                    <div class="circle ml-2">
-                        <img src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/arrow-black.5ffbb6675788293a.svg"
-                            class=" ABofon SDJYaL" alt="Off icon"></span>
-
-                    </div>
-
-                </a>
-            </div>
-            <div class="col-md-4 feature-item">
-                <a class="feature-link" href="#" target="_blank">
-                    <img class="custom-icon mr-2"
-                        src="https://contents.mediadecathlon.com/s1066180/k$ec44ffaa3178b9073f1e88c6599adb99/defaut.png?format=auto&amp;f=969x0?format=auto"
-                        alt="Easy Returns">
-                    <span>Easy Returns*</span>
-
-                    <div class="circle ml-2">
-                        <img src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/arrow-black.5ffbb6675788293a.svg"
-                            class=" ABofon SDJYaL" alt="Off icon"></span>
-
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 feature-item">
-                <a class="feature-link" href="#" target="_blank">
-                    <img class="custom-icon mr-2"
-                        src="https://contents.mediadecathlon.com/s1066181/k$0867f40e52bfbd493ad7b8bceebd0120/defaut.png?format=auto&amp;f=969x0?format=auto"
-                        alt="1 M+ Happy Customers">
-                    <span>1 M+ Happy Customers</span>
-
-                    <div class="circle ml-2">
-                        <img src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/arrow-black.5ffbb6675788293a.svg"
-                            class=" ABofon SDJYaL" alt="Off icon"></span>
-
-                    </div>
-
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- mini-cards -->
-
-    <!-- Cards -->
-
-    <!-- banner -->
-
-    <!-- Cards -->
-
-    <!-- Carousel -->
-
-    <!-- mini-cards -->
-
-    <!-- banner -->
-
-    <!-- mini-cards -->
-
-    <!-- Carousel -->
-
-    <!-- Cards -->
-
-    <!-- Banner -->
-
-    <!-- Cards -->
-
-    <!-- Carousel -->
-
-    <!-- mini-cards -->
-
-    <!-- mini-cards -->
-
-    <!-- Our Sport Collections  -->
-
-
-
-    <!-- footer  -->
-
-
-
-    <script src="./script.js"></script>
-</body>
-
-</html>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
-      .text-sm {
-        font-size: 0.875rem;
-        /* Adjust as needed */
-      }
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </nav>
 
+
+
+  <!-- mini card 1 -->
+
+  <div class="container mt-4">
+    <div class="d-flex justify-content-around">
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1095556/k$52dfe7dbe7264c175c5de737d9ffef8c/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Men">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Men</span>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1095554/k$56c97290725cc000efacfad937a8476e/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Women">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Women</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Kids">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Kids</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Shoes">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Shoes</span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1096344/k$bae38c166a8cebb9da77a55da564fc04/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Summer Collection">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Summer
+          Collection</span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words"></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&quality=70&f=768x0"
+          alt="Sale">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Sale</span></a>
+      </div>
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&quality=70&f=768x0"
+          alt="Sports Accessories">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Sports
+          Accessories</span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Sports Equipment">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Sports
+          Equipment</span></a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+  <!-- ---------------Carousel1---------------                   -->
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/Carousel1-img1.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel1-img2.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel1-img3.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel1-img4.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel1-img5.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel1-img6.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel1-img7.avif" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- No cost emi col 3 -->
+
+  <div class="container my-2 py-2.85 bg-light">
+    <div class="row text-center">
+      <div class="col-md-4 feature-item">
+        <a class="feature-link" href="#" target="_blank">
+          <img class="custom-icon mr-2"
+            src="https://contents.mediadecathlon.com/s1066179/k$a1bad6c9d4b965d79eb8c64c8092fc0b/defaut.png?format=auto&amp;f=969x0?format=auto"
+            alt="No Cost EMI Available">
+          <span>No Cost EMI Available</span>
+
+          <div class="circle ml-2">
+            <img
+              src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/arrow-black.5ffbb6675788293a.svg"
+              class=" ABofon SDJYaL" alt="Off icon"></span>
+
+          </div>
+
+        </a>
+      </div>
+      <div class="col-md-4 feature-item">
+        <a class="feature-link" href="#" target="_blank">
+          <img class="custom-icon mr-2"
+            src="https://contents.mediadecathlon.com/s1066180/k$ec44ffaa3178b9073f1e88c6599adb99/defaut.png?format=auto&amp;f=969x0?format=auto"
+            alt="Easy Returns">
+          <span>Easy Returns*</span>
+
+          <div class="circle ml-2">
+            <img
+              src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/arrow-black.5ffbb6675788293a.svg"
+              class=" ABofon SDJYaL" alt="Off icon"></span>
+
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 feature-item">
+        <a class="feature-link" href="#" target="_blank">
+          <img class="custom-icon mr-2"
+            src="https://contents.mediadecathlon.com/s1066181/k$0867f40e52bfbd493ad7b8bceebd0120/defaut.png?format=auto&amp;f=969x0?format=auto"
+            alt="1 M+ Happy Customers">
+          <span>1 M+ Happy Customers</span>
+
+          <div class="circle ml-2">
+            <img
+              src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/arrow-black.5ffbb6675788293a.svg"
+              class=" ABofon SDJYaL" alt="Off icon"></span>
+
+          </div>
+
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- mini-cards have to add here  -->
+  <div class="container mt-4 w-full bg-white h-auto my-2 md:my-3 px-3 md:px-5 py-3 md:py-5">
+    <h2 class="md:text-16 text-10 text-black font-bold tracking-normal">Bestsellers In Catgeories</h2>
+    <div class="d-flex justify-content-around">
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1095556/k$52dfe7dbe7264c175c5de737d9ffef8c/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="men">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Men
+          T-shirt</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1095554/k$56c97290725cc000efacfad937a8476e/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Women">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Women</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Kids">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Kids</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Shoes">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Shoes</span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1096344/k$bae38c166a8cebb9da77a55da564fc04/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Summer Collection">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Summer
+          Collection</span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words"></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&quality=70&f=768x0"
+          alt="Sale">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Sale</span></a>
+      </div>
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&quality=70&f=768x0"
+          alt="Sports Accessories">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Sports
+          Accessories</span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&quality=70&f=768x0"
+          alt="Sports Equipment">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Sports
+          Equipment</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- banner -->
+
+
+  <!--               ---------------Carouse2---------------                   -->
+  <br />
+
+  <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/Carousel2-img1.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel2-img2.avif" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--               ---------------Banner1---------------                   -->
+  <!--1section of card-->
+
+  <section id="monsoon">
     <div class="container">
-
-            
-            
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/Carousel1-img1.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Carousel1-img2.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Carousel1-img3.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Carousel1-img4.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Carousel1-img5.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Carousel1-img6.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Carousel1-img7.avif" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-    </div>
-</body>
-=======
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body style="
-      font-family: Roboto Condensed, sans-serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-    ">
-    <div class="flex justify-center m-auto">
-        <div class="m-4 pb-3 text-12 md:text-14">
-            <h2 class="mb-2 text-slate-700 text-lg font-semibold">
-                Our Sports Collection:
-            </h2>
-            <div>
-                <span> Badminton : </span>
-                <span>
-                    <a class="inline-block" href="#">Badminton Racket</a> |
-                    <a class="inline-block" href="#">Shuttle cock</a> |
-                    <a class="inline-block" href="#">Badminton shoes</a> |
-                    <a class="inline-block" href="#">Non Marking shoes</a> |
-                    <a class="inline-block" href="#">Badminton Tshirts</a> |
-                    <a class="inline-block" href="#">Badminton shorts</a> |
-                    <a class="inline-block" href="#">Racket cover</a> |
-                    <a class="inline-block" href="#">Badminton grip</a> |
-                    <a class="inline-block" href="#">Badminton net</a> |
-                    <a class="inline-block" href="#">Racket string</a> |
-                </span>
-            </div>
-            <div>
-                <span> Tennis : </span>
-                <span>
-                    <a class="inline-block" href="#">Tennis Clothing</a> |
-                    <a class="inline-block" href="#">Men Socks</a> |
-                    <a class="inline-block" href="#">Tennis Rackets</a> |
-                    <a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Tennis Shoes</a> |
-                    <a class="inline-block" href="#">Tennis bag</a> |
-                    <a class="inline-block" href="#">Tennis Accessories</a> |
-                    <a class="inline-block" href="#">Beach tennis</a> |
-                    <a class="inline-block" href="#">Men Tennis apparels</a> |
-                    <a class="inline-block" href="#">Women Tennis Apparels</a> |
-                </span>
-            </div>
-
-            <div>
-                <span> Table Tennis : </span><span>
-                    <a class="inline-block" href="#">Table Tennis Tables</a> |
-                    <a class="inline-block" href="#">TT Rackets</a> |
-                    <a class="inline-block" href="#">TT Balls</a> |
-                    <a class="inline-block" href="#">TT Nets</a> |
-                    <a class="inline-block" href="#">TT Racket covers</a> |
-                    <a class="inline-block" href="#">Table Tennis accessories</a> |
-                    <a class="inline-block" href="#">Table Tennis clothing</a> |
-                    <a class="inline-block" href="#">Table Tennis shoes</a> |
-                    <a class="inline-block" href="#">Table Tennis socks</a> |
-                    <a class="inline-block" href="#">TT collections</a> |
-                </span>
-            </div>
-            <div>
-                <span> Squash : </span><span>
-                    <a class="inline-block" href="#">Squash Rackets</a> |
-                    <a class="inline-block" href="#">Squash Balls</a> |
-                    <a class="inline-block" href="#">Squash Kit bags</a> |
-                    <a class="inline-block" href="#">Squash Accessories</a> |
-                    <a class="inline-block" href="#">Squash clothing</a> |
-                    <a class="inline-block" href="#">Squash shoes</a> |
-                    <a class="inline-block" href="#">Squash collections</a> |
-                </span>
-            </div>
-            <div>
-                <span> Hiking : </span><span>
-                    <a class="inline-block" href="#">Fleece</a> |
-                    <a class="inline-block" href="#">Sweaters</a> |
-                    <a class="inline-block" href="#">Rain Jacket</a> |
-                    <a class="inline-block" href="#">Hiking shoes</a> |
-                    <a class="inline-block" href="#">Men Socks</a> |
-                    <a class="inline-block" href="#">Backpack</a> |
-                    <a class="inline-block" href="#">Hiking Backpack</a> |
-                    <a class="inline-block" href="#">Bottles</a> |
-                </span>
-            </div>
-
-            <div>
-                <span> Trekking : </span><span>
-                    <a class="inline-block" href="#">Trekking Boots</a> |
-                    <a class="inline-block" href="#">Trekking Backpack</a> |
-                    <a class="inline-block" href="#">Travel backpack</a> |
-                    <a class="inline-block" href="#">Winter Jackets</a> |
-                    <a class="inline-block" href="#">Down Jackets</a> |
-                    <a class="inline-block" href="#">Trekking Poles</a> |
-                    <a class="inline-block" href="#">Travel Shirts</a> |
-                    <a class="inline-block" href="#">Shorts</a> |
-                    <a class="inline-block" href="#">Trousers</a> |
-                    <a class="inline-block" href="#">Headlamps</a> |
-                </span>
-            </div>
-            <div>
-                <span> Cardio : </span><span>
-                    <a class="inline-block" href="#">Fitness Equipment</a> |
-                    <a class="inline-block" href="#">Treadmills</a> |
-                    <a class="inline-block" href="#">Cross Trainers</a> |
-                    <a class="inline-block" href="#">Elliptical</a> |
-                    <a class="inline-block" href="#">Exercise bikes</a> |
-                    <a class="inline-block" href="#">Spin Bikes</a> |
-                    <a class="inline-block" href="#">Rowing Machine</a> |
-                    <a class="inline-block" href="#">Steppers</a> |
-                    <a class="inline-block" href="#">Trampoline</a> |
-                    <a class="inline-block" href="#">Cardio Apparel</a> |
-                </span>
-            </div>
-            <div>
-                <span> Gym Track pants : </span><span>
-                    <a class="inline-block" href="#">Gym Shorts</a> |
-                    <a class="inline-block" href="#">Gym Track pants</a> |
-                    <a class="inline-block" href="#">Gym Shorts</a> |
-                    <a class="inline-block" href="#">Men Tracksuits</a> |
-                    <a class="inline-block" href="#">Women Gym suits</a> |
-                    <a class="inline-block" href="#">Sports Bra</a> |
-                    <a class="inline-block" href="#">Gym Tops</a> |
-                    <a class="inline-block" href="#">Women fitness jacket</a> |
-                </span>
-            </div>
-            <div>
-                <span> Camping : </span><span>
-                    <a class="inline-block" href="#">Tents</a> |
-                    <a class="inline-block" href="#">Chairs</a> |
-                    <a class="inline-block" href="#">Tables</a> |
-                    <a class="inline-block" href="#">Furnitures</a> |
-                    <a class="inline-block" href="#">Sleeping bags</a> |
-                    <a class="inline-block" href="#">Mattresses</a> |
-                    <a class="inline-block" href="#">Camping Accessories</a> |
-                    <a class="inline-block" href="#">Cooksets</a> |
-                </span>
-            </div>
-            <div>
-                <span> Skiing : </span><span>
-                    <a class="inline-block" href="#">Men Thermals</a> |
-                    <a class="inline-block" href="#">Women Thermals</a> |
-                    <a class="inline-block" href="#">Beanies</a> |
-                    <a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Winter Accessories</a> |
-                    <a class="inline-block" href="#">Warmers</a> |
-                    <a class="inline-block" href="#">Junior Jackets</a> |
-                    <a class="inline-block" href="#">Junior Beanies</a> |
-                    <a class="inline-block" href="#">Ski jackets</a> |
-                </span>
-            </div>
-            <div>
-                <span> Wildlife : </span><span>
-                    <a class="inline-block" href="#">Camo Tshirts</a> |
-                    <a class="inline-block" href="#">Camo Trousers</a> |
-                    <a class="inline-block" href="#">Camo Bermudas</a> |
-                    <a class="inline-block" href="#">Camo Caps</a> |
-                    <a class="inline-block" href="#">Gum Boots</a> |
-                    <a class="inline-block" href="#">Binoculars</a> |
-                    <a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Shelter</a> |
-                    <a class="inline-block" href="#">Umbrellas</a> |
-                    <a class="inline-block" href="#">Pouches</a>
-                </span>
-            </div>
-            <div>
-                <span> Road Cycle : </span><span><a class="inline-block" href="#">Bike Racks</a> |
-                    <a class="inline-block" href="#">Cycles</a> |
-                    <a class="inline-block" href="#">Mountain Bikes</a> |
-                    <a class="inline-block" href="#">Hybrid Cycles </a> |
-                    <a class="inline-block" href="#">Road Bikes</a> |
-                    <a class="inline-block" href="#">Kids Cycle</a> |
-                    <a class="inline-block" href="#">Cycle Accessories</a> |
-                </span>
-            </div>
-            <div>
-                <span> Road Cycle : </span><span><a class="inline-block" href="#">Bike Racks</a> |
-                    <a class="inline-block" href="#">Cycles</a> |
-                    <a class="inline-block" href="#">Mountain Bikes</a> |
-                    <a class="inline-block" href="#">Hybrid Cycles </a> |
-                    <a class="inline-block" href="#">Road Bikes</a> |
-                    <a class="inline-block" href="#">Kids Cycle</a> |
-                    <a class="inline-block" href="#">Cycle Accessories</a> |
-                </span>
-            </div>
-            <div>
-                <span> MTB Cycle : </span><span><a class="inline-block" href="#">Bike Racks</a> |
-                    <a class="inline-block" href="#">Cycles</a> |
-                    <a class="inline-block" href="#">Mountain Bikes</a> |
-                    <a class="inline-block" href="#">Hybrid Cycles </a> |
-                    <a class="inline-block" href="#">Road Bikes</a> |
-                    <a class="inline-block" href="#">Kids Cycle</a> |
-                    <a class="inline-block" href="#">Cycle Accessories</a> |
-                </span>
-            </div>
-            <div>
-                <span> Fishing : </span><span><a class="inline-block" href="#">Fishing Rods</a> |
-                    <a class="inline-block" href="#">Fishing Reels</a> |
-                    <a class="inline-block" href="#">Hooks</a> |
-                    <a class="inline-block" href="#">Lures</a> |
-                    <a class="inline-block" href="#">Fishing lines</a> |
-                    <a class="inline-block" href="#">Fishing Accessories</a> |
-                    <a class="inline-block" href="#">Fishing Camp Furnitures</a> |
-                    <a class="inline-block" href="#">Fishing ponchos</a> |
-                    <a class="inline-block" href="#">Fishing GIlet</a> |
-                </span>
-            </div>
-            <div>
-                <span> Horse Riding : </span><span><a class="inline-block" href="#">Horse riding helmets</a> |
-                    <a class="inline-block" href="#">Breeches</a> |
-                    <a class="inline-block" href="#">Horse riding boots</a> |
-                    <a class="inline-block" href="#">Horse riding gloves</a> |
-                    <a class="inline-block" href="#">Leather saddle</a> |
-                    <a class="inline-block" href="#">Cloth saddle</a> |
-                </span>
-            </div>
-            <div>
-                <span> Swimming : </span><span><a class="inline-block" href="#">Swimming costumes</a> |
-                    <a class="inline-block" href="#">Swimming cap</a> |
-                    <a class="inline-block" href="#">Swimming goggles</a> |
-                    <a class="inline-block" href="#">Towels</a> |
-                    <a class="inline-block" href="#">Bathrobes</a> |
-                    <a class="inline-block" href="#">Flipflops</a> |
-                    <a class="inline-block" href="#">Swimming equipments</a> |
-                    <a class="inline-block" href="#">Aqua learning</a> |
-                    <a class="inline-block" href="#">Buoyancy aids</a> |
-                </span>
-            </div>
-            <div>
-                <span> Football : </span><span><a class="inline-block" href="#">Football</a> |
-                    <a class="inline-block" href="#">Football shoes</a> |
-                    <a class="inline-block" href="#">Football bag</a> |
-                    <a class="inline-block" href="#">Football Jersey</a> |
-                    <a class="inline-block" href="#">Football shorts</a> |
-                    <a class="inline-block" href="#">Football Socks</a> |
-                    <a class="inline-block" href="#">Goal Posts</a> |
-                    <a class="inline-block" href="#">Training accessories</a> |
-                    <a class="inline-block" href="#">Goalkeeper Kit</a> |
-                    <a class="inline-block" href="#">Football Equipment</a> |
-                </span>
-            </div>
-            <div>
-                <span> Cricket : </span><span><a class="inline-block" href="#">Tennis Cricket bat</a> |
-                    <a class="inline-block" href="#">English Willow Bat</a> |
-                    <a class="inline-block" href="#">Kids cricket bat</a> |
-                    <a class="inline-block" href="#">Cricket ball</a> |
-                    <a class="inline-block" href="#">Cricket accessories</a> |
-                    <a class="inline-block" href="#">Adult cricket shoes</a> |
-                    <a class="inline-block" href="#">Kids cricket shoes</a> |
-                    <a class="inline-block" href="#">Cricket track pants</a> |
-                    <a class="inline-block" href="#">Cricket jersey</a> |
-                </span>
-            </div>
-            <div>
-                <span> Surfing : </span><span><a class="inline-block" href="#">Board shorts</a> |
-                    <a class="inline-block" href="#">Frisbee</a>
-                    | <a class="inline-block" href="#">shorts2</a> |
-                    <a class="inline-block" href="#">Wetsuits</a> |
-                    <a class="inline-block" href="#">Bodyboards</a> |
-                    <a class="inline-block" href="#">Kites</a> |
-                    <a class="inline-block" href="#">Snorkelling</a>
-                    | <a class="inline-block" href="#">Scuba diving</a> |
-                    <a class="inline-block" href="#">Kayaks</a> |
-                    <a class="inline-block" href="#">Standup paddle</a> |
-                </span>
-            </div>
-            <div>
-                <span> Running : </span><span><a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Jogging shoes</a> |
-                    <a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Running Tshirts</a> |
-                    <a class="inline-block" href="#">Running shorts</a> |
-                    <a class="inline-block" href="#">Running Tights</a> |
-                    <a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Sports watch</a> |
-                    <a class="inline-block" href="#">Weighing scale</a> |
-                    <a class="inline-block" href="#">Earphones</a> |
-                </span>
-            </div>
-            <div>
-                <span> Golf : </span><span><a class="inline-block" href="#">Golf clubs</a> |
-                    <a class="inline-block" href="#">Golf trolleys</a> |
-                    <a class="inline-block" href="#">Golf balls</a> |
-                    <a class="inline-block" href="#">Golf accessories</a> |
-                    <a class="inline-block" href="#">Polo Tshirts</a> |
-                    <a class="inline-block" href="#">Golf Trouser</a> |
-                    <a class="inline-block" href="#">Golf shoes</a> |
-                    <a class="inline-block" href="#">Golf caps</a> |
-                    <a class="inline-block" href="#">Golf shorts</a> |
-                </span>
-            </div>
-            <div>
-                <span> Skateboard : </span><span><a class="inline-block" href="#">Skateboard</a> |
-                    <a class="inline-block" href="#">Long boards</a> |
-                    <a class="inline-block" href="#">Waveboard</a> |
-                    <a class="inline-block" href="#">Skateboard shoes</a> |
-                    <a class="inline-block" href="#">Skateboard accessories</a> |
-                    <a class="inline-block" href="#">Kids scooters</a> |
-                    <a class="inline-block" href="#">Adult scooters</a> |
-                    <a class="inline-block" href="#">Spares</a> |
-                    <a class="inline-block" href="#">Scooter helmets</a> |
-                </span>
-            </div>
-            <div>
-                <span> Roller skating : </span><span><a class="inline-block" href="#">Quad Roller skates</a> |
-                    <a class="inline-block" href="#">Inline skates</a> |
-                    <a class="inline-block" href="#">Kids Inline skates</a> |
-                    <a class="inline-block" href="#">Adult Inline skates</a> |
-                    <a class="inline-block" href="#">Skating Helmets</a> |
-                    <a class="inline-block" href="#">Skating guards</a> |
-                    <a class="inline-block" href="#">Skating bags</a> |
-                    <a class="inline-block" href="#">Skating spares accessories</a> |
-                </span>
-            </div>
-            <div>
-                <span> About us : </span><span><a class="inline-block" href="#">Now enjoy and experience the entire
-                        offering of Decathlon India’s
-                        60+ sports and over 6000+ products by using the Decathlon mobile
-                        application!</a>
-                    |
-                </span>
-            </div>
-            <div>
-                <span>
-                    Choose from an array of gear and equipment that's designed to get
-                    you play-ready. : </span><span><a class="inline-block" href="#"></a> | </span>
-            </div>
-            <div>
-                <span> Winter Collection : </span><span><a class="inline-block" href="#">We provide a wide range of
-                        Winter Jackets, Winter shoes,
-                        Sweaters, Fleece, Pullover, Down jacket, Beanies, Gloves, Snow
-                        jacket, Arctic winter jacket, Woolen socks and with more winter
-                        categories.
-                    </a>
-                    |
-                </span>
-            </div>
-            <div>
-                <span> The Range : </span><span><a class="inline-block" href="#">Whatever your choice of sport, the
-                        popular ones like football,
-                        running, cycling or you're looking for something niche like
-                        fishing, archery or horse riding, we've got you covered head to
-                        toe with the right gear that fits just fine and every piece of
-                        equipment that you may need to practice.</a>
-                    |
-                </span>
-            </div>
-            <div>
-                <span> Innovation : </span><span><a class="inline-block" href="#">Innovation is at the heart of what we
-                        do. We “Innovate smart”
-                        because we want to make sports easier for people who use our
-                        products. The 2-second pop-up tent that makes camping easier, the
-                        roll-on net that encourages playing table tennis on any flat
-                        surface or even the Kipsta Cage which can turn any ground into a
-                        football field are some of our innovative examples. Discover many
-                        such products on the app.</a>
-                    |
-                </span>
-            </div>
-            <div>
-                <span> Scan and Go available in selective stores : </span><span><a class="inline-block" href="#">For a
-                        smooth, quick and easy checkout process with no assistance
-                        at our Decathlon Stores, you can now use the App. Simply scan a
-                        product you want to buy, order or both, pay for it using UPI,
-                        NetBanking, EMI, debit/credit card, and leave the store without
-                        any waiting at the checkout counter.</a>
-                    |
-                </span>
-            </div>
-            <div>
-                <span> Men Winter Collections : </span><span><a class="inline-block" href="#">Men Sweaters</a> |
-                    <a class="inline-block" href="#">Men Fleece Jacket</a> |
-                    <a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Men Sweatshirt</a> |
-                    <a class="inline-block" href="#">Men Hoodies</a> |
-                    <a class="inline-block" href="#">Men Winter Coat</a> |
-                    <a class="inline-block" href="#"></a> |
-                    <a class="inline-block" href="#">Men Puffer Jacket</a> |
-                    <a class="inline-block" href="#">Men Down Jacket</a> |
-                    <a class="inline-block" href="#">Men Snow Jacket</a> |
-                    <a class="inline-block" href="#">Men Bomber Jacket</a> |
-                    <a class="inline-block" href="#">Winter Shoes</a> |
-                    <a class="inline-block" href="#">Men Winter Shoes</a> |
-                    <a class="inline-block" href="#">Snow Socks</a> |
-                    <a class="inline-block" href="#">Men Winter Outfits</a> |
-                    <a class="inline-block" href="#">Men Winter Tshirt</a> |
-                    <a class="inline-block" href="#">Men Thermals</a> |
-                    <a class="inline-block" href="#">Men Warm Trouser</a> |
-                </span>
-            </div>
-            <div>
-                <span> Women Winter Collection : </span><span><a class="inline-block" href="#">Women Sweaters</a> |
-                    <a class="inline-block" href="#">Women Fleece Jacket</a> |
-                    <a class="inline-block" href="#">Women Pullover</a> |
-                    <a class="inline-block" href="#">Women Sweatshirt</a> |
-                    <a class="inline-block" href="#">Women Jackets</a> |
-                    <a class="inline-block" href="#">Women Winter Jacket</a> |
-                    <a class="inline-block" href="#">Women Puffer Jacket</a> |
-                    <a class="inline-block" href="#">Women Down Jacket</a> |
-                    <a class="inline-block" href="#">Women Snow Jacket</a> |
-                    <a class="inline-block" href="#">Women Bomber Jacket</a> |
-                    <a class="inline-block" href="#">Women Snow Shoes</a> |
-                    <a class="inline-block" href="#">Women Winter Outfits</a> |
-                    <a class="inline-block" href="#">Women Thermals</a> |
-                    <a class="inline-block" href="#">Women Warm Trouser</a> |
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <footer class="flex flex-col justify-center ">
+      <div>
         <div>
-          <div class="flex flex-wrap">
-            <div class="pr-0 sm:pr-1 w-full lg:w-9/12">
-              <div class="p-4 rounded bg-slate-200">
-                <div>
-                  <div class="block md:hidden">
-                    <p class="m-0 font-semibold uppercase text-16 text-grey-700">Our Promise</p>
-                  </div>
-                  <div class="flex justify-between">
-                    <div class="pr-2.5 h- w-full hidden md:flex items-center">
-                      <p class="m-0 font-semibold uppercase text-16 text-grey-700">Our Promise</p>
-                    </div>
-                    <div class="w-full ">
-                      <a href="#" target="_blank" class="flex items-center">
-                        <span class="mr-2 ">
-                          <img src="./assests/defaut.avif" alt="No Cost EMI Available" class="size-10" loading="lazy">
-                        </span>
-                        <span class="text-14 text-grey-700">No Cost EMI Available</span>
-                      </a>
-                    </div>
-                    <div class="w-full ">
-                      <a href="#" target="_blank" class="flex items-center">
-                        <span class="mr-2">
-                          <img src="./assests/defaut1.avif" class="size-10"  loading="lazy">
-                        </span>
-                        <span class="text-14 text-grey-700">Easy Returns*</span>
-                      </a>
-                    </div>
-                    <div class="w-full ">
-                      <a href="javascript:void(0);" target="" class="flex items-center">
-                        <span class="mr-2">
-                          <img src="./assests/defaut2.avif" class="size-10" loading="lazy">
-                        </span>
-                        <span class="text-14 text-grey-700">1 million+ happy Customers</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pl-1 w-full lg:w-3/12 flex bg-slate-200 justify-center items-center">
-              <div class="py-3.5   flex flex-col rounded ">
-                <p class="text-16 font-semibold uppercase text-left mb-3.5">Experience decathlon app on mobile</p>
-                <div class="flex">
-                  <a href="#" target="_blank" class="no-underline">
-                    <img src="./assests/google-play-badge.f6fa1f85049d9cdc-1.webp" alt="Gplay" loading="lazy" class=" w-full ">
-                  </a>
-                  <a href="#" target="_blank" class="ml-2.5">
-                    <img crossorigin="anonymous" src="./assests/appstore.b3fa2df12dd0536e.svg" alt="AppStore" loading="lazy" class="qTrOcW w-full CFFibz">
-                  </a>
-                </div>
-              </div>
-            </div>
+          <p>Monsoon</p>
+          <h1>Picks For You</h1>
+        </div>
+        <div>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="12.31px" viewBox="0 -960 960 960" width="12.31"
+              fill="#434343">
+              <path d="M576-267.69 363.69-480 576-692.31 599.31-669l-189 189 189 189L576-267.69Z" />
+            </svg>
+
+          </a>
+
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="12.31px" viewBox="0 -960 960 960" width="12.31px"
+              fill="#434343">
+              <path d="m549.69-480-189-189L384-692.31 596.31-480 384-267.69 360.69-291l189-189Z" />
+            </svg>
+
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <img
+            src="https://contents.mediadecathlon.com/p2598777/87a251ae9b5d490a08d3214e5289cb8b/p2598777.jpg?format=auto&quality=70&f=320x0"
+            class="" alt="Rain cote" />
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+            <p style="padding: 0px; margin: 0px;">3.1</p>
           </div>
-          <div class="mt-0 lg:mt-2 flex flex-wrap">
-            <div class="w-full xl:w-9/12">
-              <div class="flex justify-between p-5">
-                <div>
-                  <h6 class="font-semibold uppercase text-14 text-grey-700">SUPPORT</h6>
-                  <div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Contact our Stores</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Delivery</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h6 class="font-semibold uppercase text-14 text-grey-700">OUR SERVICES</h6>
-                  <div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Decathlon for Schools</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Decathlon for Corporates</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Decathlon for Sport Clubs</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Decathlon Gift Cards</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Installation &amp; Assembly Services</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h6 class="font-semibold uppercase text-14 text-grey-700">ABOUT US</h6>
-                  <div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Who we are</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Careers</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Made In India</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h6 class="font-semibold uppercase text-14 text-grey-700">LEGAL</h6>
-                  <div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Return Policy</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Terms and Conditions</a>
-                    </div>
-                    <div>
-                      <a href="#" class="block w-full leading-loose text-14 text-grey-700">Privacy Policy</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="mt-7 lg:mt-0 p-0 lg:pr-8 lg:pl-5 lg:py-8 block lg:flex items-center justify-between border-0 lg:border-t lg:border-b border-solid border-grey-200">
-                  <div class="pb-5 lg:pb-0 flex lg:border-0 border-b border-solid border-grey-400">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48" stroke-width="2">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 13C14.4 13.8 12.8 15.4 12 17.5C11.2 15.4 9.6 13.8 7.5 13C9.6 12.2 11.2 10.6 12 8.5C12.8 10.6 14.4 12.2 16.5 13Z" stroke="currentColor"></path>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9 8.00001C8.1 8.30001 7.3 9.10001 7 10C6.7 9.10001 5.9 8.30001 5 8.00001C5.9 7.70001 6.7 6.90001 7 6.00001C7.3 6.90001 8.1 7.70001 9 8.00001Z" fill="currentColor"></path>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2 4.80001C10.7 5.00001 10.2 5.40001 10 6.00001C9.8 5.40001 9.3 5.00001 8.8 4.80001C9.4 4.60001 9.8 4.10001 10 3.60001C10.2 4.10001 10.7 4.50001 11.2 4.80001Z" fill="currentColor"></path>
-                    </svg>
-                    <div>
-                      <span class="mb-0 text-14 text-grey-700 uppercase font-bold">100% Secure transaction</span>
-                      <p class="mt-1.5 mb-0 text-12 lg:text-14 text-grey-400">Secure SSL encryption</p>
-                    </div>
-                  </div>
-                  <div class="mt-5 lg:mt-0 flex flex-wrap">
-                    <img class="mr-3 mt-1 max-w-full" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/debit.f4805e7bb82b5f2c.svg" alt="Debit" loading="lazy">
-                    <img class="mr-3 mt-1 max-w-full" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/credit.c05545ef381afd56.svg" alt="Credit" loading="lazy">
-                    <img class="mr-3 mt-1 max-w-full" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/upi.83e3b6a59314da78.svg" alt="UPI" loading="lazy">
-                    <img class="max-w-full mt-1" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/net_banking.304011d4bbd25b7e.svg" alt="Net Banking" loading="lazy">
-                  </div>
-                  <div>
-                    <a href="#" class="py-2 px-3.5 block border-l border-r border-solid border-grey-200 text-14 text-grey-700">Site Map</a>
-                  </div>
-                  <div class="flex items-center text-14">DECATHLON is present in
-                    <div class="relative cursor-pointer ml-3">
-                      <span class="m-0 py-2 px-4 border border-solid border-grey-600 rounded">
-                        <span>46</span>
-                        <span class="ml-1">Countries</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="card-body">
+            <h1>CAPERLAN</h1>
+            <p class="card-text">Hiking Rain Poncho MT500 Black</p>
+            <h2>&#8377; 399</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://contents.mediadecathlon.com/p2490922/9d7406af9a1d3b9b374dfb7e0ffb906d/p2490922.jpg?format=auto&quality=70&f=320x0"
+            class="" alt="Rockrider" />
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+            <p style="padding: 0px; margin: 0px;">4.9</p>
+          </div>
+          <div class="card-body">
+            <h1>ROCKRIDER</h1>
+            <p class="card-text">Rainproof Jacket EXPL 500 - Red</p>
+            <h2>&#8377; 2499</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://contents.mediadecathlon.com/p2043964/c0672a0f8a514fe22546e91d7e44010a/p2043964.jpg?format=auto&quality=70&f=320x0"
+            class="Kalanji" alt="Rain cote" />
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+            <p style="padding: 0px; margin: 0px;">4.5</p>
+          </div>
+          <div class="card-body">
+            <h1>KALENJI</h1>
+            <p class="card-text">Men Running Wind and Rain Jacket - black</p>
+            <h2>&#8377; 1599</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://contents.mediadecathlon.com/p2407057/583ee67652bbad9a9458b67db0c10ae3/p2407057.jpg?format=auto&quality=70&f=320x0"
+            class="" alt="Forclaz" />
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+            <p style="padding: 0px; margin: 0px;">4.5</p>
+          </div>
+          <div class="card-body">
+            <h1>FORCLAZ</h1>
+            <p class="card-text">Kids’ hiking rain poncho - 10 L - 126 to 156 cm Blue green</p>
+            <h2>&#8377; 699</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://contents.mediadecathlon.com/p2621848/9aa6956200b602c1c9b6e6fead6cc077/p2621848.jpg?format=auto&quality=70&f=320x0"
+            class="" alt="Forclaz" />
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+            <p style="padding: 0px; margin: 0px;">4.2</p>
+          </div>
+          <div class="card-body">
+            <h1>FORCLAZ</h1>
+            <p class="card-text">Hiking Rain Poncho MT500 Black</p>
+            <h2>&#8377; 699</h2>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img
+            src="https://contents.mediadecathlon.com/p2515581/afbc7afe72fb41c06394bffbe424598f/p2515581.jpg?format=auto&quality=70&f=320x0"
+            class="" alt="Rockrider" />
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+            <p style="padding: 0px; margin: 0px;">3.9</p>
+          </div>
+          <div class="card-body">
+            <h1>CAPERLAN</h1>
+            <p class="card-text">Adult Rain Pocket Poncho Dark Blue</p>
+            <h2>&#8377; 399</h2>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+  <br />
+
+  <img src="./assets/Banner-1.avif" class="img-fluid" alt="..." />
+
+  <br />
+
+  <!--               ---------------4image-Carousel1 out door---------------                   -->
+
+  <div class="container1">
+    <div class="w-full px-4">
+      <h2 class="mb-6 font-semibold text-16 md:text-20">
+        Outdoor Essentials
+      </h2>
+    </div>
+
+    <div id="carouselExample2" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img1.avif" class="img-fluid" alt="Image 1 description" />
             </div>
-            <div class="w-full xl:w-3/12 bg-slate-200">
-              <div class="px-0 lg:px-10 pt-4 lg:py-5 rounded lg:bg-grey-50">
-                <div class ="">
-                  <div class="pb-0 lg:pb-10   ">
-                    <p class="uppercase text-14 font-bold">Follow Us</p>
-                    <div class="mt-2.5 flex justify-center gap-5">
-                      <a href="#" title="Facebook" target="_blank" class="w-8 h-8 rounded  bg-slate-800 leading-loose text-center">
-                        <img src="./assests/facebook.eb87d42a519970a4.svg" target="_blank" alt="facebook" class="inline-block align-middle">
-                      </a>
-                      <a href="#" title="Twitter" target="_blank" class="w-8 h-8 rounded  bg-slate-800  leading-loose text-center">
-                        <img src="./assests/twitter.b197a84f1fb0535d.svg" target="_blank" alt="twitter" class="inline-block align-middle">
-                      </a>
-                      <a href="#" title="instagram" target="_blank" class="w-8 h-8 rounded  bg-slate-800  leading-loose text-center">
-                        <img src="./assests/instagram.af05cd998024d3c8.svg" target="_blank" alt="instagram" class="inline-block align-middle">
-                      </a>
-                      <a href="#" title="Youtube" target="_blank" class="w-8 h-8 rounded bg-slate-800 leading-loose text-center">
-                        <img src="./assests/youtube.c67fd6223e18d3f1.svg" target="_blank" alt="youtube" class="inline-block align-middle">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="lg:pb-5">
-                  <p class="uppercase text-14 font-bold">Sport advice for you</p>
-                  <div class="mt-2.5 flex justify-between">
-                    <a href="#" title="blog.decathlon.in" target="_blank" class="p-2.5 w-full block rounded bg-white text-14 text-grey-700 text-center">blog.decathlon.in</a>
-                  </div>
-                </div>
-                <div class="mt-4">
-                  <p class="uppercase text-14 font-bold">Explore sports events near you</p>
-                  <div class="mt-2.5 flex justify-between">
-                    <a href="#" target="_blank" title="play.decathlon.in" class="p-2.5 w-full block rounded bg-white text-14 text-grey-700 text-center">play.decathlon.in</a>
-                  </div>
-                </div>
-              </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img2.avif" class="img-fluid" alt="Image 2 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img3.avif" class="img-fluid" alt="Image 3 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img4.avif" class="img-fluid" alt="Image 4 description" />
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="relative overflow-hidden">
-        <p class="h-18 md:h-full my-4 text-12 text-center text-grey-700">
-          © 2024 Decathlon Sports India Pvt Ltd. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  </body>
-</html>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img5.avif" class="img-fluid" alt="Image 5 description" />
+            </div>
 
-        <div class="flex justify-center relative overflow-hidden">
-          <p class="h-18 md:h-full my-4 text-12 text-center text-grey-700">© 2024 Decathlon Sports India Pvt Ltd. All rights reserved.</p>
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img6.avif" class="img-fluid" alt="Image 6 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img7.avif" class="img-fluid" alt="Image 7 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4imageCarousel-img8.avif" class="img-fluid" alt="Image 8 description" />
+            </div>
+          </div>
         </div>
-      </footer>
-     
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div> 
+
+ 
+
+  <!--               ---------------Carousel3 wild  binoculer---------------                   -->
+
+  <br>
+
+  <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/Carousel3-img1.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel3-img2.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel3-img3.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel3-img4.avif" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+  <!--               ---------------Banner2---/mini most loved ------------                   -->
+
+  <div class="container mt-4 w-full bg-white h-auto my-2 md:my-3 px-3 md:px-5 py-3 md:py-5">
+    <h3 class="md:text-8 text-8 text-black font-bold tracking-normal">Most Loved Accessories In Summer</h3>
+    <div class="d-flex justify-content-around">
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1066075/k$b1055e53ea9e57fe5500df733070d5e3/Frame%20427321590.png?format=auto&quality=70&f=320x0"
+          alt="men">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Sunglasses</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1066069/k$53c01b33716737eddcfb373cac825d99/Frame%20427321591.png?format=auto&quality=70&f=320x0"
+          alt="Women">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Caps & Hat</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1066910/k$b93306ad58723d1ba41031c45e73a267/Frame%20427321595.png?format=auto&quality=70&f=320x0"
+          alt="Kids">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Socks</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1066088/k$953c6b5ee89448bcc644e102f1127e89/Frame%20427321596.png?format=auto&quality=70&f=320x0"
+          alt="Shoes">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Water Bottles</span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1066113/k$b661a691d23c09f580fa22c060c8be2c/Frame%20427321597.png?format=auto&quality=70&f=320x0"
+          alt="Summer Collection">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Umbrella</span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words"></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1083934/k$407817b588851f856b8cbd6a35d33eb8/defaut.jpg?format=auto&quality=70&f=320x0"
+          alt="Sale">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Travel Accessory
+        </span></a>
+      </div>
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1066911/k$c1f158765bfd19c13f89d6bd0ad130f7/Frame%20427321593.png?format=auto&quality=70&f=320x0"
+          alt="Sports Accessories">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Bags & Backpack
+        </span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1066912/k$c001690c250abd426acfdcf6a329cafa/Frame%20427321592.png?format=auto&quality=70&f=320x0"
+          alt="Sports Equipment">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Massagers</span></a>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <img style="width: 100%;" src="./assets/Banner-2.avif" class="img-fluid" alt="..." />
+
+  <br />
+
+  <!--               ---------------Carouse4---------------                   -->
+
+  <br />
+
+  <div id="carouselExample4" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/Carousel4-img1.avif" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Carousel4-img2.avif" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--               ---------------Banner3---------------  mini tranding in fitness            -->
+
+  <div class="container mt-4 w-full bg-white h-auto my-2 md:my-3 px-3 md:px-5 py-3 md:py-5">
+    <h3 class="md:text-8 text-8 text-black font-bold tracking-normal">Trending In Fitness Collection</h3>
+    <div class="d-flex justify-content-around">
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017218/k$511a4890d725f89c47632114bc3f17b5/Frame%20375.png?format=auto&quality=70&f=320x0"
+          alt="men">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Skipping Rope</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017214/k$b862c06504ad09246c88e0b7322c8165/Frame%20385.png?format=auto&quality=70&f=320x0"
+          alt="Women">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Resistance Band</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017216/k$0bb3b0231aa67c4e4532330591bdf6bd/Frame%20382.png?format=auto&quality=70&f=320x0"
+          alt="Kids">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Yoga Mats
+        </span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017220/k$2a8b5e679aba075c3d65d8d54adde4e2/Frame%20381.png?format=auto&quality=70&f=320x0"
+          alt="Shoes">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Weights & Dumbbells</span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1017222/k$be34b92da8d1a98bc0cf96c8da44d1d8/Frame%20384.png?format=auto&quality=70&f=320x0"
+          alt="Summer Collection">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Exercise Bike</span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words"></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1017217/k$e370bba87476637cee694a48b955efec/Frame%20380.png?format=auto&quality=70&f=320x0"
+          alt="Sale">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Elliptical & Cross Trainer
+        </span></a>
+      </div>
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017215/k$828e8969082a2893d5790c48c3fcb57a/Frame%20383.png?format=auto&quality=70&f=320x0"
+          alt="Sports Accessories">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Treadmills
+        </span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1025304/k$bd1f924da3c34bdddce9ae97e9e9b1f9/Frame%20386.png?format=auto&quality=70&f=320x0"
+          alt="Sports Equipment">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Punching Bags</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!--  card tranding near you  -->
+<!--2nd section of card-->
+
+<section id="near_you">
+  <div class="container">
+    <div>
+      <div>
+        <p>TRENDING</p>
+        <h1>NEAR YOU</h1>
+      </div>
+      <div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg"  height="12.31px" viewBox="0 -960 960 960" width="12.31" fill="#434343"><path d="M576-267.69 363.69-480 576-692.31 599.31-669l-189 189 189 189L576-267.69Z"/></svg>
+
+           </a>
+
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="12.31px" viewBox="0 -960 960 960" width="12.31px" fill="#434343"><path d="m549.69-480-189-189L384-692.31 596.31-480 384-267.69 360.69-291l189-189Z"/></svg>
+          
+          </a>
+      </div>
+    </div>
+
+
+<!--card-->
+    <div>
+      <!--card1-->
+      <div class="card">
+        <img
+          src="https://contents.mediadecathlon.com/p2273704/45979084bc75f77fb9b7c3a4efc12751/p2273704.jpg?format=auto&quality=70&f=320x0"
+          class=""
+          alt="..."
+        />
+        <div>
+          <img
+            src="https://d1314cmsbd81ch.cloudfront.net/stickers/lowest.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000000"
+            >
+              <path
+                d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+
+            <p>4.6 | 3.3k</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#274483"
+            >
+              <path
+                d="m480-178-30-29q-105-97-171-162T177-480q-36-46-48.5-82.5T116-637q0-77 55.5-132T305-824q46 0 92 25t83 73q37-48 83-73t92-25q78 0 133.5 55T844-637q0 38-12 73.5t-48 81Q748-437 682-371T508-205l-28 27Zm0-63q95-87 156-147t97.5-104.5q36.5-44.5 50.5-78t14-66.5q0-60-40.5-100.5T655-778q-34 0-66 16t-66 51l-35 41h-16l-35-41q-35-36-67.5-51.5T305-778q-61 0-102 40.5T162-637q0 33 13 65t48.5 76q35.5 44 97 104T480-241Zm0-269Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h1 class="card-title">DOMYOS</h1>
+          <p class="card-text">
+            Men Half Zip Rain Jacket with Storage Pouch Black - NH100
+          </p>
+          <h2>&#8377; 399</h2>
+          <button class="btn btn-light">ADD TO CART</button>
+        </div>
+      </div>
+
+<!--card1-->
+      <div class="card">
+        <img
+          src="https://contents.mediadecathlon.com/p2567760/06cf21e3f5a8a75af7ac0659729255e7/p2567760.jpg?format=auto&quality=70&f=320x0"
+          class=""
+          alt="..."
+        />
+        <div>
+<!--
+          <img
+            src="https://d1314cmsbd81ch.cloudfront.net/stickers/lowest.png"
+            alt=""
+          />              
+-->
+        </div>
+
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000000"
+            >
+              <path
+                d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+
+            <p>4.6 | 3.3k</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#274483"
+            >
+              <path
+                d="m480-178-30-29q-105-97-171-162T177-480q-36-46-48.5-82.5T116-637q0-77 55.5-132T305-824q46 0 92 25t83 73q37-48 83-73t92-25q78 0 133.5 55T844-637q0 38-12 73.5t-48 81Q748-437 682-371T508-205l-28 27Zm0-63q95-87 156-147t97.5-104.5q36.5-44.5 50.5-78t14-66.5q0-60-40.5-100.5T655-778q-34 0-66 16t-66 51l-35 41h-16l-35-41q-35-36-67.5-51.5T305-778q-61 0-102 40.5T162-637q0 33 13 65t48.5 76q35.5 44 97 104T480-241Zm0-269Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h1 class="card-title">DOMYOS</h1>
+          <p class="card-text">
+            Stretchable, Quick Dry, Zip Pocket,Convetible Jog Fit- Mens Gym Trackpant Black              <h2>&#8377; 999</h2>
+          <button class="btn btn-light">ADD TO CART</button>
+        </div>
+      </div>
+
+
+<!--card3-->
+
+      <div class="card">
+        <img
+          src="https://contents.mediadecathlon.com/p2055736/46161b6466503da0d7caad7a9c4340ce/p2055736.jpg?format=auto&quality=70&f=320x0"
+          class=""
+          alt="..."
+        />
+        <div>
+<!--              <img
+            src="https://d1314cmsbd81ch.cloudfront.net/stickers/clearance.png"
+            alt=""
+          />-->
+        </div>
+
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000000"
+            >
+              <path
+                d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+
+            <p>4.4 | 980</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#274483"
+            >
+              <path
+                d="m480-178-30-29q-105-97-171-162T177-480q-36-46-48.5-82.5T116-637q0-77 55.5-132T305-824q46 0 92 25t83 73q37-48 83-73t92-25q78 0 133.5 55T844-637q0 38-12 73.5t-48 81Q748-437 682-371T508-205l-28 27Zm0-63q95-87 156-147t97.5-104.5q36.5-44.5 50.5-78t14-66.5q0-60-40.5-100.5T655-778q-34 0-66 16t-66 51l-35 41h-16l-35-41q-35-36-67.5-51.5T305-778q-61 0-102 40.5T162-637q0 33 13 65t48.5 76q35.5 44 97 104T480-241Zm0-269Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h1 class="card-title">DOMYOS</h1>
+          <p class="card-text">
+            Sports Bra Low Support - Black              </p>
+          <h2>&#8377; 399</h2>
+          <button class="btn btn-light">ADD TO CART</button>
+        </div>
+      </div>
+
+<!--card4-->
+      <div class="card">
+        <img
+          src="https://contents.mediadecathlon.com/p2273755/fbfd2f6805de6c0a5bcfee979eaf1827/p2273755.jpg?format=auto&quality=70&f=320x0"
+          class=""
+          alt="..."
+        />
+        <div>
+          <img
+            src="https://d1314cmsbd81ch.cloudfront.net/stickers/lowest.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000000"
+            >
+              <path
+                d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+
+            <p>4.7 | 1.8k</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#274483"
+            >
+              <path
+                d="m480-178-30-29q-105-97-171-162T177-480q-36-46-48.5-82.5T116-637q0-77 55.5-132T305-824q46 0 92 25t83 73q37-48 83-73t92-25q78 0 133.5 55T844-637q0 38-12 73.5t-48 81Q748-437 682-371T508-205l-28 27Zm0-63q95-87 156-147t97.5-104.5q36.5-44.5 50.5-78t14-66.5q0-60-40.5-100.5T655-778q-34 0-66 16t-66 51l-35 41h-16l-35-41q-35-36-67.5-51.5T305-778q-61 0-102 40.5T162-637q0 33 13 65t48.5 76q35.5 44 97 104T480-241Zm0-269Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h1 class="card-title">DOMYOS</h1>
+          <p class="card-text">
+            Shorts With Zip Pocket Black
+          </p>
+          <h2>&#8377; 999</h2>
+          <button class="btn btn-light">ADD TO CART</button>
+        </div>
+      </div>
+
+
+<!--card5-->
+      <div class="card">
+        <img
+          src="https://contents.mediadecathlon.com/p2424779/f8a2fec71abbad214e3985d1b161edaa/p2424779.jpg?format=auto&quality=70&f=320x0"
+          class=""
+          alt="..."
+        />
+        <div>
+<!--              <img
+            src="https://d1314cmsbd81ch.cloudfront.net/stickers/lowest.png"
+            alt=""
+          />-->
+        </div>
+
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="16px"
+              fill="#000000"
+            >
+              <path
+                d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+
+            <p>4.4 | 4.1k</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#274483"
+            >
+              <path
+                d="m480-178-30-29q-105-97-171-162T177-480q-36-46-48.5-82.5T116-637q0-77 55.5-132T305-824q46 0 92 25t83 73q37-48 83-73t92-25q78 0 133.5 55T844-637q0 38-12 73.5t-48 81Q748-437 682-371T508-205l-28 27Zm0-63q95-87 156-147t97.5-104.5q36.5-44.5 50.5-78t14-66.5q0-60-40.5-100.5T655-778q-34 0-66 16t-66 51l-35 41h-16l-35-41q-35-36-67.5-51.5T305-778q-61 0-102 40.5T162-637q0 33 13 65t48.5 76q35.5 44 97 104T480-241Zm0-269Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h1 class="card-title">DOMYOS</h1>
+          <p class="card-text">
+            Sports Bra High Support with Zip - Black</p>
+          <h2>&#8377; 1,199</h2>
+          <button class="btn btn-light">ADD TO CART</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <br />
+
+  <img style="width: 100%;" src="./assets/Banner-3.avif" class="img-fluid" alt="..." />
+
+  <br />
+
+  <!-- mini 4 Explore top  -->
+  <div class="container mt-4 w-full bg-white h-auto my-2 md:my-3 px-3 md:px-5 py-3 md:py-5">
+    <h3 class="md:text-8 text-8 text-black font-bold tracking-normal">Explore Top Categories</h3>
+    <div class="d-flex justify-content-around">
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017218/k$511a4890d725f89c47632114bc3f17b5/Frame%20375.png?format=auto&quality=70&f=320x0"
+          alt="men">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Skipping Rope</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017214/k$b862c06504ad09246c88e0b7322c8165/Frame%20385.png?format=auto&quality=70&f=320x0"
+          alt="Women">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Resistance Band</span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017216/k$0bb3b0231aa67c4e4532330591bdf6bd/Frame%20382.png?format=auto&quality=70&f=320x0"
+          alt="Kids">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Yoga Mats
+        </span></a>
+      </div>
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017220/k$2a8b5e679aba075c3d65d8d54adde4e2/Frame%20381.png?format=auto&quality=70&f=320x0"
+          alt="Shoes">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Weights & Dumbbells</span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1017222/k$be34b92da8d1a98bc0cf96c8da44d1d8/Frame%20384.png?format=auto&quality=70&f=320x0"
+          alt="Summer Collection">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Exercise Bike</span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words"></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1017217/k$e370bba87476637cee694a48b955efec/Frame%20380.png?format=auto&quality=70&f=320x0"
+          alt="Sale">
+        <span
+          class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Elliptical & Cross Trainer
+        </span></a>
+      </div>
+
+      <div class="mini-card nav-item">
+        <img
+          src="https://contents.mediadecathlon.com/s1017215/k$828e8969082a2893d5790c48c3fcb57a/Frame%20383.png?format=auto&quality=70&f=320x0"
+          alt="Sports Accessories">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Treadmills
+        </span></a>
+      </div>
+      <div class="mini-card nav-item ">
+        <img
+          src="https://contents.mediadecathlon.com/s1025304/k$bd1f924da3c34bdddce9ae97e9e9b1f9/Frame%20386.png?format=auto&quality=70&f=320x0"
+          alt="Sports Equipment">
+        <span class="md:text-16 text-10 text-center font-medium md:max-w-[22ch] gCYSrz text-black break-words">Punching Bags</span></a>
+      </div>
+    </div>
+  </div>
+
+<!-- card need to add Top deal on cycles -->
+
+
+  <!--               ---------------Banner4---------------                   -->
+
+  <br />
+
+  <img style="width: 100%;" src="assets/Banner-4.avif" class="img-fluid" alt="..." />
+
+  <br />
+
+
+  <!--               ---------------4image-Carousel2---------------                   -->
+
+  <div class="container2">
+    <div class="w-full px-4">
+      <h2 class="mb-6 font-semibold text-16 md:text-20">
+        Outdoor Essentials
+      </h2>
+    </div>
+
+    <div id="carouselExample5" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img1.avif" class="img-fluid" alt="Image 1 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img2.avif" class="img-fluid" alt="Image 2 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img3.avif" class="img-fluid" alt="Image 3 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img4.avif" class="img-fluid" alt="Image 4 description" />
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img5.avif" class="img-fluid" alt="Image 5 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img6.avif" class="img-fluid" alt="Image 6 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img7.avif" class="img-fluid" alt="Image 7 description" />
+            </div>
+
+            <div class="col-md-3">
+              <img src="./assets/4image-Carousel2-img8.avif" class="img-fluid" alt="Image 8 description" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  </div>
+  <script>
+    document.getElementById('flexSwitchCheckDefault').addEventListener('change', function () {
+        if (this.checked) {
+            document.body.classList.add('dark-mode');
+            document.querySelector('.navbar').classList.remove('navbar-light-mode');
+            document.querySelector('.navbar').classList.add('navbar-dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+            document.querySelector('.navbar').classList.remove('navbar-dark-mode');
+            document.querySelector('.navbar').classList.add('navbar-light-mode');
+        }
+    });
+</script>
+  <script>
+    const placeholders = ["Search for 'Swimming Caps'", "Search for 'Running Shoes'", "Search for 'Yoga Mats'", "Search for 'Bicycles'", "Search for 'Tennis Rackets'"];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % placeholders.length;
+      document.getElementById('search-bar').setAttribute('placeholder', placeholders[index]);
+    }, 1000);
+  </script>
 </body>
 
-
 </html>
-
