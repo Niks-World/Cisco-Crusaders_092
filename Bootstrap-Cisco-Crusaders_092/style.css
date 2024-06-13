@@ -50,7 +50,11 @@ body{
 }
 
 .logo img {
+    height: auto;
     width: 144px;
+    border: 2px solid blue;
+    margin-bottom: 20px;
+
 }
 
 .search-bar {
@@ -100,6 +104,69 @@ body{
     color: black;
     margin-top: 4px;
 }
+
+/* NEW */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.all-sports-text {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
 
 /* banner 1 mini  */
 #banne1mini{
