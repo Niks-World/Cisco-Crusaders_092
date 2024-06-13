@@ -52,7 +52,7 @@ body{
 .logo img {
     height: auto;
     width: 144px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin-bottom: 20px;
 
 }
@@ -142,7 +142,9 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 100px;
+    width: 1005;
+    
 }
 
 .search-bar {
