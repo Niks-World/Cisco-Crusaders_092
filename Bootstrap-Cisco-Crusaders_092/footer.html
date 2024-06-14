@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Footer</title>
+    <title>Footer</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .footer-title {
             font-size: 16px;
             font-weight: 600;
             text-transform: uppercase;
-            color: #4a4a4a;
+            color: black;
+            text-decoration: solid;
+            
         }
         .footer-link {
             font-size: 14px;
             color: #4a4a4a;
             text-decoration: none;
+         
+          
         }
         .footer-link:hover {
             text-decoration: underline;
@@ -65,6 +69,27 @@
             margin-left: 5px;
             
         }
+        .countries{
+             /* border: 1px solid red; */
+             display: flex;
+             
+        }
+        .upi{
+           
+            width: 480px;
+        }
+        .cont{
+            width: 320px;
+        }
+        .site-map{
+           /* border: 1px solid red; */
+           display: grid;
+           width: 140px;
+           font-size: 14px;
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+      
     </style>
 </head>
 <body>
@@ -99,7 +124,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 d-flex bg-light p-4 rounded flex-column">
-                        <p class="footer-title mb-3">Experience Decathlon app on mobile</p>
+                        <p class="footer-title mb-3">Experience GearUp app on mobile</p>
                         <div class="d-flex mb-3">
                             <a href="https://play.google.com/store/apps/details?id=com.evamall.evacustomer&hl=en_IN" target="_blank" class="mr-2">
                                 <img src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/google-play-badge.f6fa1f85049d9cdc.webp" alt="Google Play" class="footer-img">
@@ -123,10 +148,10 @@
                             <div>
                                 <h6 class="footer-title">Our Services</h6>
                                 <div>
-                                    <a href="https://b2b.decathlon.in/shop/decathlon-for-schools" class="footer-link d-block mb-2">Decathlon for Schools</a>
-                                    <a href="https://b2b.decathlon.in/shop/decathlon-for-corporates" class="footer-link d-block mb-2">Decathlon for Corporates</a>
-                                    <a href="https://b2b.decathlon.in/shop/decathlon-for-sports-clubs" class="footer-link d-block mb-2">Decathlon for Sport Clubs</a>
-                                    <a href="https://b2b.decathlon.in/shop/gift-card" class="footer-link d-block mb-2">Decathlon Gift Cards</a>
+                                    <a href="https://b2b.decathlon.in/shop/decathlon-for-schools" class="footer-link d-block mb-2">GearUP for Schools</a>
+                                    <a href="https://b2b.decathlon.in/shop/decathlon-for-corporates" class="footer-link d-block mb-2">GearUP for Corporates</a>
+                                    <a href="https://b2b.decathlon.in/shop/decathlon-for-sports-clubs" class="footer-link d-block mb-2">GearUP for Sport Clubs</a>
+                                    <a href="https://b2b.decathlon.in/shop/gift-card" class="footer-link d-block mb-2">GearUP Gift Cards</a>
                                     <a href="https://www.decathlon.in/shop/Decathlon-services" class="footer-link d-block">Installation & Assembly Services</a>
                                 </div>
                             </div>
@@ -159,32 +184,32 @@
                                     <p class="secure-description">Secure SSL encryption</p>
                                 </div>
                             </div>
-                            <div class="d-flex flex-wrap">
+                            <div class="upi flex-wrap">
                                 <img class="mr-3 mb-2" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/debit.f4805e7bb82b5f2c.svg" alt="Debit" loading="lazy">
                                 <img class="mr-3 mb-2" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/credit.c05545ef381afd56.svg" alt="Credit" loading="lazy">
                                 <img class="mr-3 mb-2" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/upi.83e3b6a59314da78.svg" alt="UPI" loading="lazy">
                                 <img class="mb-2" src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/net_banking.304011d4bbd25b7e.svg" alt="Net Banking" loading="lazy">
                             </div>
-                            <a href="/sitemap" class="footer-link site-map">Site Map</a>
-                            <div class="d-flex align-items-center text-14">
-                                DECATHLON is present in
+                            <a href="/sitemap" class="site-map">Site Map</a>
+                            <div class="cont align-items-center text-14 ">
+                                &nbsp; &nbsp; GearUP is present in
                                 <div class="countries d-inline-block">
-                                    <span class="border rounded px-3 py-2">46 Countries</span>
+                                    <span class="border rounded px-3">46 Countries</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3">
                         <div class="p-4 rounded bg-light">
-                            <p class="footer-title mb-3">Follow Us</p>
-                            <div class="d-flex mb-3">
-                                <a href="https://www.facebook.com/decathlonindia" title="Facebook" target="_blank" class="footer-social mr-2">
+                            <p class="footer-title mb-4 ">Follow Us</p>
+                            <div class="d-flex mb-3 ">
+                                <a href="https://www.facebook.com/decathlonindia" title="Facebook" target="_blank" class="footer-social mr-4 ">
                                     <img src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/facebook.eb87d42a519970a4.svg" alt="Facebook">
                                 </a>
-                                <a href="https://twitter.com/decathlon_india" title="Twitter" target="_blank" class="footer-social mr-2">
+                                <a href="https://twitter.com/decathlon_india" title="Twitter" target="_blank" class="footer-social mr-4">
                                     <img src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/twitter.b197a84f1fb0535d.svg" alt="Twitter">
                                 </a>
-                                <a href="https://www.instagram.com/decathlonsportsindia/" title="Instagram" target="_blank" class="footer-social mr-2">
+                                <a href="https://www.instagram.com/decathlonsportsindia/" title="Instagram" target="_blank" class="footer-social  mr-4">
                                     <img src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/instagram.af05cd998024d3c8.svg" alt="Instagram">
                                 </a>
                                 <a href="https://www.youtube.com/user/decathlonsportindia" title="YouTube" target="_blank" class="footer-social">
@@ -193,17 +218,17 @@
                             </div>
                             <p class="footer-title mb-3">Sport advice for you</p>
                             <div class="mb-3">
-                                <a href="https://blog.decathlon.in/?utm_source=website&utm_medium=footer" target="_blank" class="btn btn-light w-100">blog.decathlon.in</a>
+                                <a href="https://blog.decathlon.in/?utm_source=website&utm_medium=footer" target="_blank" class="btn btn-dark w-100">blog.GearUP.in</a>
                             </div>
                             <p class="footer-title mb-3">Explore sports events near you</p>
                             <div>
-                                <a href="https://play.decathlon.in/?utm_source=footer&utm_medium=dsi%20website&utm_campaign=footer_button" target="_blank" class="btn btn-light w-100">play.decathlon.in</a>
+                                <a href="https://play.decathlon.in/?utm_source=footer&utm_medium=dsi%20website&utm_campaign=footer_button" target="_blank" class="btn btn-dark w-100">play.GearUP.in</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center py-4">
-                    <p class="text-12 text-muted">© 2024 Decathlon Sports India Pvt Ltd. All rights reserved.</p>
+                    <p class="text-12 text-muted">© 2024 GearUP Sports India Pvt Ltd. All rights reserved.</p>
                 </div>
             </div>
         </footer>
