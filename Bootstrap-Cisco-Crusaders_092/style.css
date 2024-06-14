@@ -27,7 +27,7 @@ body {
 
 /* dark mood light mood  */
 nav {
-    background-color: black;
+    background-color: rgb(3, 57, 255);
 }
 body.dark-mode {
     background-color: #121212;
@@ -35,7 +35,7 @@ body.dark-mode {
 }
 
 .navbar-dark-mode {
-    background-color: #030000 !important;
+    background-color: #010101 !important;
 }
 
 .navbar-light-mode {
@@ -43,7 +43,7 @@ body.dark-mode {
 }
 
 .navbar-light-mode .navbar-nav .nav-link {
-    color: black;
+    /* color: black; */
 }
 
 .navbar-dark-mode .navbar-nav .nav-link {
@@ -631,12 +631,15 @@ div.card>img:hover{
 
 
 
+#nabaji {}
+
 
 #nabaji .container>div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
+
 }
 
 #nabaji .container>div:nth-of-type(1)>div:nth-of-type(1) p {
@@ -654,6 +657,26 @@ div.card>img:hover{
     font-size: 1.75rem;
     margin: 0rem;
 }
+
+
+}
+
+#nabaji .container>div:nth-of-type(1)>div:nth-of-type(1) p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #687787;
+    margin: 0;
+
+}
+
+#nabaji .container>div:nth-of-type(1)>div:nth-of-type(1) h1 {
+
+    color: #424453;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 0rem;
+}
+
 
 #nabaji .container>div:nth-of-type(1)>div:nth-of-type(2) {
     display: flex;
@@ -715,6 +738,7 @@ div.card>img:hover{
 
 }
 
+
 #nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
@@ -736,7 +760,31 @@ div.card>img:hover{
     padding: .125rem .5rem;
     width: 39%;
 
+
+#nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 195px;
+    padding: 0px 8px;
 }
+
+
+#nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2)>div:nth-of-type(1) {
+    justify-content: space-between;
+
+    border: 1px solid #d9dde1;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255 255 255 / 85%);
+    padding: .125rem .5rem;
+    width: 39%;
+
+}
+
 
 #nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2)>div:nth-of-type(1)>p {
 
@@ -835,6 +883,7 @@ div.card>img:hover{
 }
 .navbar-nav .nav-link {
     color: white !important;
+
 }
 .search-bar {
     position: relative;
@@ -849,6 +898,22 @@ div.card>img:hover{
     text-align: center;
     margin: 0 10px;
 }
+
+}
+.search-bar {
+    position: relative;
+}
+.search-bar input {
+    width: 300px;
+}
+.nav-item img {
+    max-width: 100px;
+}
+.nav-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
 .nav-item span {
     display: block;
 }
@@ -936,6 +1001,7 @@ div.card>img:hover{
     font-weight: 500;
 }
 
+
 /* /footer  */
 
 
@@ -989,6 +1055,7 @@ a:hover {
         /* Large size */
     }
 }
+
 
 
 
@@ -1169,4 +1236,7 @@ a:hover {
         height: 100vh;
         /* Full viewport height */
     }
+
+}
+
 }
