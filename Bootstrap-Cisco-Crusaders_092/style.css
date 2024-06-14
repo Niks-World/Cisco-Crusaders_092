@@ -26,14 +26,16 @@ body {
 
 
 /* dark mood light mood  */
-
+nav {
+    background-color: black;
+}
 body.dark-mode {
     background-color: #121212;
     color: white;
 }
 
 .navbar-dark-mode {
-    background-color: #333 !important;
+    background-color: #030000 !important;
 }
 
 .navbar-light-mode {
@@ -47,17 +49,49 @@ body.dark-mode {
 .navbar-dark-mode .navbar-nav .nav-link {
     color: white;
 }
+.dark{
+    /* border: 1px solid red; */
+    color: antiquewhite;
+}
 
 
-#monsoon {}
+/* card hover   */
 
-#monsoon .container {}
+.mini-card{
+  /* border:  1px solid red ; */
+  transition: all 0.3s;
+
+}
+.mini-card:hover{
+transform: scale(1.23);
+}
+
+/*  monson card hover  */
+
+div.card{
+    /* border:  1px solid red ;  */
+    transition: all 0.8s;
+}
+div.card>img:hover{
+    z-index: 1;
+    transform: scale(2);
+    align-items: center;
+}
+
+#monsoon {
+  
+}
+
+#monsoon .container {
+    
+}
 
 #monsoon .container>div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
+    
 }
 
 #monsoon .container>div:nth-of-type(1)>div:nth-of-type(1) p {
@@ -65,6 +99,7 @@ body.dark-mode {
     font-size: 14px;
     color: #687787;
     margin: 0;
+    
 
 }
 
@@ -83,6 +118,7 @@ body.dark-mode {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+ 
 }
 
 
@@ -593,9 +629,7 @@ body.dark-mode {
 
 
 
-#nabaji {}
 
-#nabaji .container {}
 
 #nabaji .container>div:nth-of-type(1) {
     display: flex;
