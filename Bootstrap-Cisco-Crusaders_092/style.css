@@ -70,12 +70,13 @@ transform: scale(1.23);
 
 div.card{
     /* border:  1px solid red ;  */
-    transition: all 0.8s;
+    /* transition: all 0.8s; */
 }
 div.card>img:hover{
     z-index: 1;
     transform: scale(2);
     align-items: center;
+   
 }
 
 #monsoon {
