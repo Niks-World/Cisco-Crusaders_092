@@ -133,3 +133,194 @@ margin-bottom: 12px;
     font-size: 1rem;
     font-weight: 600;
 }
+
+
+#nabaji{
+
+}
+
+#nabaji .container{
+
+}
+
+#nabaji .container >div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+#nabaji .container >div:nth-of-type(1) >div:nth-of-type(1) p{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #687787;
+    margin: 0;
+    
+    }
+
+    #nabaji .container >div:nth-of-type(1) >div:nth-of-type(1) h1{
+
+        color: #424453;
+        font-weight: 700;
+        font-size: 1.75rem;
+        margin: 0rem;
+    }
+
+    #nabaji .container >div:nth-of-type(1) >div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+    }
+
+    #nabaji .container >div:nth-of-type(1) >div:nth-of-type(2) a{
+       
+        display: flex;
+        text-decoration: none;
+        width: 26px;
+        height: 26px;
+        border: 1px solid #949494;
+        border-radius: 50%;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    #nabaji .container >div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    
+
+}
+
+#nabaji .container >div:nth-of-type(2) >div {
+    max-width: 264px;
+    position: relative;
+    border-radius: 0px;
+
+}
+#nabaji .container >div:nth-of-type(2) >div img{
+    max-width: 100%;
+  
+}
+#nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(1){
+width: 127.26px;
+position: absolute ;
+top: 0;
+
+
+}
+#nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(1) img{
+       width: 100%;
+    vertical-align: baseline;
+    
+    
+    }
+
+    #nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(2){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 195px;
+        padding: 0px 8px;
+    }
+
+    #nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(2) >div:nth-of-type(1){
+        justify-content: space-between;
+
+        border: 1px solid #d9dde1;
+        display: flex;
+        align-items: center;
+        background-color: rgb(255 255 255 / 85%);
+        padding: .125rem .5rem;
+        width: 39%;
+        
+        }
+        #nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(2) >div:nth-of-type(1) >p{
+           
+            color: rgb(54 67 186 );
+            
+            }
+
+            #nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(2) div:nth-of-type(2){
+                width: 28px;
+                height: 28px;
+                background-color: rgb(255 255 255);
+                border: 1px solid rgb(148 148 148);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            #nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(2) div:nth-of-type(2) svg{
+color: red;
+
+            }
+            #nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(2) div:nth-of-type(2) >i{
+                color: rgb(54 67 186);
+                width: 16px;
+                height: 16px;
+                
+
+
+    
+
+                
+                }
+       
+
+                #nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(3){
+    padding: 16px 8px; 
+}
+#nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(3) h1{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: .75rem;
+    padding: 5px 0;
+
+}
+
+#nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(3) p{
+    font-size: .875rem;
+    color: #000;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .65rem;
+
+}
+
+#nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(3) h2{
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+#nabaji .container >div:nth-of-type(2) >div >div:nth-of-type(3) button{
+    border-color: rgb(148 148 148 );
+    padding: .5rem;
+    text-align: center;
+    width: -webkit-fill-available;
+    margin-top: 1.75rem;
+    background-color: transparent;
+    color: rgb(16 16 16);
+    border-radius: 0px;
+    font-size: .875rem
+
+}
+
+
+
+
