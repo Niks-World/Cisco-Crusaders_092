@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let searchText=document.getElementById("search-text");
+            setInterval(() => {
+                searchText.placeholder = searchText.placeholder === "Search for " ? "bhalekari text" : "Chaitali";
+            }, 3000);
+        });
+    </script>
     <style>
         *{
             margin: 0px;
@@ -20,7 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#ffff;
+    background-color: #e5e7eb;
     padding: 0 16px;
     height: 100px;
 }
@@ -49,21 +57,18 @@
 .search-bar {
     display: flex;
     align-items: center;
-  
 }
 
 .search-bar input {
     padding: 8px 16px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: rgb(235, 231, 231);
 }
 
 .search-button {
     padding: 8px 16px;
-    background-color: #ffff;
-    border: 1px solid #ffff;
+    background-color: #d1d5db;
+    border: 1px solid #ccc;
     border-left: 0;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -115,7 +120,9 @@
         <div class="search-bar">
             <input id="search-text" type="text" placeholder="search for">
             <button class="search-button">
-                
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19a8 8 0 100-16 8 8 0 000 16zm7-7h.01"></path>
+                </svg>
             </button>
         </div>
         <div class="right-section">
