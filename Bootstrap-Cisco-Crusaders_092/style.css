@@ -66,6 +66,21 @@ body.dark-mode {
 transform: scale(1.23);
 }
 
+/* banner 1 deals*/
+
+.carousel-item img {
+    max-height: 300px; /* Adjust the height as needed */
+    width: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the images */
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 /*  monson card hover  */
 
 div.card{
@@ -83,16 +98,11 @@ div.card>img:hover{
   
 }
 
-#monsoon .container {
-    
-}
-
 #monsoon .container>div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
-    
 }
 
 #monsoon .container>div:nth-of-type(1)>div:nth-of-type(1) p {
@@ -100,7 +110,6 @@ div.card>img:hover{
     font-size: 14px;
     color: #687787;
     margin: 0;
-    
 
 }
 
@@ -119,7 +128,6 @@ div.card>img:hover{
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
- 
 }
 
 
@@ -630,16 +638,15 @@ div.card>img:hover{
 
 
 
-
 #nabaji {}
 
+#nabaji .container {}
 
 #nabaji .container>div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
-
 }
 
 #nabaji .container>div:nth-of-type(1)>div:nth-of-type(1) p {
@@ -657,26 +664,6 @@ div.card>img:hover{
     font-size: 1.75rem;
     margin: 0rem;
 }
-
-
-}
-
-#nabaji .container>div:nth-of-type(1)>div:nth-of-type(1) p {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #687787;
-    margin: 0;
-
-}
-
-#nabaji .container>div:nth-of-type(1)>div:nth-of-type(1) h1 {
-
-    color: #424453;
-    font-weight: 700;
-    font-size: 1.75rem;
-    margin: 0rem;
-}
-
 
 #nabaji .container>div:nth-of-type(1)>div:nth-of-type(2) {
     display: flex;
@@ -738,7 +725,6 @@ div.card>img:hover{
 
 }
 
-
 #nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
@@ -760,31 +746,7 @@ div.card>img:hover{
     padding: .125rem .5rem;
     width: 39%;
 
-
-#nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 195px;
-    padding: 0px 8px;
 }
-
-
-#nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2)>div:nth-of-type(1) {
-    justify-content: space-between;
-
-    border: 1px solid #d9dde1;
-    display: flex;
-    align-items: center;
-    background-color: rgb(255 255 255 / 85%);
-    padding: .125rem .5rem;
-    width: 39%;
-
-}
-
 
 #nabaji .container>div:nth-of-type(2)>div>div:nth-of-type(2)>div:nth-of-type(1)>p {
 
@@ -863,6 +825,7 @@ div.card>img:hover{
     border-radius: 0px;
     font-size: .875rem
 }
+
 
 /* style Css  will be here  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
@@ -964,10 +927,10 @@ div.card>img:hover{
 
 }
 
-.ml-2 {
-    /* border: 1px solid red; */
-    background-color: aliceblue;
-}
+/* .ml-2 { */
+
+    /* padding-right: 20px; */
+/* } */
 
 .circle {
     width: 30px;
@@ -1000,6 +963,30 @@ div.card>img:hover{
     margin-top: 10px;
     font-weight: 500;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* /footer  */
@@ -1055,52 +1042,6 @@ a:hover {
         /* Large size */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1242,10 +1183,11 @@ a:hover {
 
 
 
+/* our sport section  */
 
-
-
-
+body {
+    font-family: 'Roboto Condensed';
+}
 
 
 
@@ -1337,4 +1279,10 @@ a:hover {
    font-size: 14px;
     color: #4a4a4a;
     text-decoration: none;
+}
+.iconfb{
+    /* border: 1px solid red; */
+    display: flex;
+    padding-left: 10px;
+    gap: 30px;
 }
