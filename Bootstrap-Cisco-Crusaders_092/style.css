@@ -91,11 +91,12 @@ div.card>img:hover{
     z-index: 1;
     transform: scale(2);
     align-items: center;
+     /* border:  1px solid red ;  */
    
 }
 
 #monsoon {
-  
+ 
 }
 
 #monsoon .container>div:nth-of-type(1) {
@@ -152,7 +153,8 @@ div.card>img:hover{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 18px;
+    /* gap: 50px; */
+    justify-content: space-between;
 }
 
 #monsoon .container>div:nth-of-type(2)>div {
@@ -219,7 +221,9 @@ div.card>img:hover{
 
 
 
-#near_you {}
+#near_you {
+    margin-bottom: 20px;
+}
 
 #near_you .container {}
 
@@ -273,10 +277,9 @@ div.card>img:hover{
 #near_you .container>div:nth-of-type(2) {
     display: flex;
     align-items: center;
-    gap: 32px;
+    /* gap: 84px; */
+    justify-content: space-between;
     flex-wrap: wrap;
-
-
 }
 
 #near_you .container>div:nth-of-type(2)>div {
@@ -415,7 +418,9 @@ div.card>img:hover{
 
 
 
-#quechua {}
+#quechua { 
+    margin: 30px 0px;
+}
 
 #quechua .container {}
 
@@ -469,9 +474,9 @@ div.card>img:hover{
 #quechua .container>div:nth-of-type(2) {
     display: flex;
     align-items: center;
-    gap: 32px;
+    /* gap: 32px; */
+    justify-content: space-between;
     flex-wrap: wrap;
-
 
 }
 
@@ -692,7 +697,8 @@ div.card>img:hover{
 #nabaji .container>div:nth-of-type(2) {
     display: flex;
     align-items: center;
-    gap: 32px;
+    /* gap: 32px; */
+    justify-content: space-between;
     flex-wrap: wrap;
 
 
@@ -862,7 +868,7 @@ div.card>img:hover{
     margin: 0 10px;
 }
 
-}
+
 .search-bar {
     position: relative;
 }
@@ -1286,8 +1292,14 @@ a{
     text-decoration: none;
 }
 .iconfb{
-    /* border: 1px solid red; */
+  
     display: flex;
     padding-left: 10px;
     gap: 30px;
 }
+
+footer{
+    background-color: #252b8d;
+}
+
+/* #a4bdf5 */
