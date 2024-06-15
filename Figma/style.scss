@@ -12,7 +12,7 @@
     opacity: 0px;
     color: white;
     top: 90px;
-    left: 15px;
+   margin-left: 30px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     opacity: 0px;
     color: white;
     top: 90px;
-    left: 15px;
+   margin-left: 15px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -57,11 +57,12 @@
     opacity: 0px;
     color: white;
     top: 90px;
-    left: 15px;
+  margin-left: 15px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   margin-right: 30px;
   }
   #cb1 {
     display: flex;
@@ -131,6 +132,9 @@
     // padding-right: 15px;
   }
   #cb-featured{
+  }
+  #cb-choose-tour
+  {
     width: 1745px;
     height: 652px;
   }
