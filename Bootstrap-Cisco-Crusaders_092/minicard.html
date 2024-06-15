@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .mini-card {
+            text-align: center;
+            margin: 10px;
+            flex: 0 0 calc(100% / 8); /* Default to 8 cards per row */
+        }
+        .mini-card img {
+            width: 100%;
+            height: auto;
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .mini-card span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            .mini-card {
+                flex: 0 0 calc(100% / 4); /* 4 cards per row */
+            }
+        }
+
+        @media (max-width: 992px) {
+            .mini-card {
+                flex: 0 0 calc(100% / 3); /* 3 cards per row */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mini-card {
+                flex: 0 0 calc(100% / 2); /* 2 cards per row */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .mini-card {
+                flex: 0 0 calc(100%); /* 1 card per row */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="d-flex flex-wrap justify-content-around">
+            <div class="mini-card nav-item">
+                <img src="https://contents.mediadecathlon.com/s1095556/k$52dfe7dbe7264c175c5de737d9ffef8c/defaut.jpg?format=auto&quality=70&f=768x0" alt="Men">
+                <span class="text-muted">Men</span>
+            </div>
+            <div class="mini-card nav-item">
+                <img src="https://contents.mediadecathlon.com/s1095554/k$56c97290725cc000efacfad937a8476e/defaut.jpg?format=auto&quality=70&f=768x0" alt="Women">
+                <span class="text-muted">Women</span>
+            </div>
+            <div class="mini-card nav-item">
+                <img src="https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&quality=70&f=768x0" alt="Kids">
+                <span class="text-muted">Kids</span>
+            </div>
+            <div class="mini-card nav-item">
+                <a href="./singlePage/index.html">
+                    <img src="https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/defaut.jpg?format=auto&quality=70&f=768x0" alt="Shoes">
+                    <span class="text-muted">Shoes</span>
+                </a>
+            </div>
+            <div class="mini-card nav-item">
+                <img src="https://contents.mediadecathlon.com/s1096344/k$bae38c166a8cebb9da77a55da564fc04/defaut.jpg?format=auto&quality=70&f=768x0" alt="Summer Collection">
+                <span class="text-muted">Summer Collection</span>
+            </div>
+            <div class="mini-card nav-item">
+                <img src="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&quality=70&f=768x0" alt="Sale">
+                <span class="text-muted">Sale</span>
+            </div>
+            <div class="mini-card nav-item">
+                <img src="https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&quality=70&f=768x0" alt="Sports Accessories">
+                <span class="text-muted">Sports Accessories</span>
+            </div>
+            <div class="mini-card nav-item">
+                <img src="https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&quality=70&f=768x0" alt="Sports Equipment">
+                <span class="text-muted">Sports Equipment</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

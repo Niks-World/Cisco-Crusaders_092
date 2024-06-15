@@ -18,7 +18,7 @@ p {
 
 body {
     margin: 0;
-    padding: 0px;
+    padding: 76px;
 }
 
 .container {
@@ -29,6 +29,9 @@ body {
 /* dark mood light mood  */
 nav {
     background-color: rgb(3, 57, 255);
+   
+
+
 }
 body.dark-mode {
     background-color: #121212;
@@ -36,7 +39,7 @@ body.dark-mode {
 }
 
 .navbar-dark-mode {
-    background-color: #010101 !important;
+    background-color: #0e0d0d !important;
 }
 
 .navbar-light-mode {
@@ -53,8 +56,8 @@ body.dark-mode {
 .dark{
     /* border: 1px solid red; */
     color: antiquewhite;
-    position: relative;
-    left: 120px;    
+   
+    margin-left: 60px;
 
 }
 
@@ -68,6 +71,7 @@ body.dark-mode {
 }
 .mini-card:hover{
 transform: scale(1.23);
+
 }
 
 /* banner 1 deals*/
@@ -81,6 +85,11 @@ transform: scale(1.23);
     display: flex;
     justify-content: center;
 }
+
+
+/* mini card 1 respoansive */
+
+
 
 
 
@@ -848,9 +857,24 @@ div.card>img:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* NEW  Nav bar */
 .navbar {
     background-color: #0033a0;
+
+    /* border: 1px solid red; */
+  
+
 }
 .navbar-brand {
     color: white !important;
@@ -877,7 +901,9 @@ div.card>img:hover{
 .search-bar {
     position: relative;
 }
+
 .search-bar input {
+    margin-left: 60px;
     width: 300px;
 }
 .nav-item img {
