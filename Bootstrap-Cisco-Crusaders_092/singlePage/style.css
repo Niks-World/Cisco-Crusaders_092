@@ -10,8 +10,9 @@
 }
 
 body{
-    background-color: black;
-    background: url(https://wallpapercave.com/wp/Ibf53ql.jpg) no-repeat;
+    /* background-color: whitesmoke; */
+    /* background: url(https://wallpapercave.com/wp/Ibf53ql.jpg) no-repeat; */
+    background: url(https://img.freepik.com/premium-photo/sports-gear-generative-ai_431161-5077.jpg ) no-repeat;
     background-size: cover;
     background-position: center;
     
@@ -39,8 +40,8 @@ nav {
 
     /* position: absolute; */
     top: 0px;
-    background: transparent;
-    background-color: ;
+    /* background: transparent; */
+    background-color: black;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
