@@ -18,6 +18,7 @@ p {
 
 body {
     margin: 0;
+    padding: 0px;
 }
 
 .container {
@@ -52,6 +53,9 @@ body.dark-mode {
 .dark{
     /* border: 1px solid red; */
     color: antiquewhite;
+    position: relative;
+    left: 120px;    
+
 }
 
 
@@ -89,8 +93,9 @@ div.card{
 }
 div.card>img:hover{
     z-index: 1;
-    transform: scale(2);
+    transform: scale(1.35);
     align-items: center;
+    border-radius: 20px;
      /* border:  1px solid red ;  */
    
 }
