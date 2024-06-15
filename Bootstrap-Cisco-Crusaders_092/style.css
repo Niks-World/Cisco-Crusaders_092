@@ -1292,7 +1292,7 @@ a{
     text-decoration: none;
 }
 .iconfb{
-    /* border: 1px solid red; */
+  
     display: flex;
     padding-left: 10px;
     gap: 30px;
