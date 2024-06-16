@@ -29,6 +29,7 @@ body {
 /* dark mood light mood  */
 nav {
     background-color: rgb(3, 57, 255);
+
    
 
 
@@ -57,7 +58,8 @@ body.dark-mode {
     /* border: 1px solid red; */
     color: antiquewhite;
    
-    margin-left: 190px;
+    /* margin-left: 0px; */
+    margin-right: 20px;
 
 }
 
@@ -903,7 +905,7 @@ div.card>img:hover{
 }
 
 .search-bar input {
-    margin-left: 60px;
+    margin-left: 70px;
     width: 300px;
 }
 .nav-item img {
@@ -1330,7 +1332,7 @@ a{
 }
 
 footer{
-    background-color: #252b8d;
+    background-color: #565cc6;
 }
 
 /* #a4bdf5 */
