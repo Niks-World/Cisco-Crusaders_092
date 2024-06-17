@@ -2,30 +2,26 @@
 
 
 body {
-  // width: 1400px;
-  width: 100%;
-  height: 7270.44px;
-  top: -980px;
-  left: 4372px;
-  gap: 0px;
-  opacity: 0px;
+  padding: 0;
+  margin: 0;
+  width: auto;
+
 
 }
 
 // nav bar
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
-.container {
-  width: 100%;
+.containernav {
+ 
   background-color: #111;
-  padding: 1rem 0;
+  // background: transparent;
+  width: 100%;
+  border: 1px solid red;
+  
 }
 
 nav {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -33,10 +29,13 @@ nav {
 }
 
 header {
+  // height: 1860px;
+    border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+ 
 }
 
 header .left {
@@ -120,18 +119,8 @@ header .right div .cricle {
 
 //hero landing page 
 
-.hero{
-  background-image: url(https://s3-alpha-sig.figma.com/img/7069/95f4/64472927f43c84e8277fd9dc902279ea?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d4aTaUpRS75YixGzPL0gyW122EiHS2Nb9xs4M1WQt-~28-Gg146i-d1N1uc13a8GcsaiXcEG5kjc436RQOW1OaJiN6yIdTDZS2uk5p2D3koz8wD0mBwWJ~1GTrqAPlhdg4nABbvNb76J-WKsAsb3~Zns4XpfKBqtRmkVIMAcPFjEaJ55O2thtEMeXw4y5txxpp3l2g3tmrgNPrAY8N1Y~OcPhOM7ip873vdL1Tjhvj~mQdpnoO7Aj~0fhztGL08GhxSZScpTzO2v1bLvDSUMdMYxa5Bux1oG3VCIRIg5EcpcuBkUax8gTA6ElghLK0Bm8OgjaKQlI63-Sb3JqYDekg__);
-  // width: 1400px;
-  width: 100%;
-  height: 854px;
-  top: 30px;
-  left: 30px;
-  gap: 0px;
-  border-radius: 12px 0px 0px 0px;
-  opacity: 0px;
-  
-}
+
+
 
 
 
