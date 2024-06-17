@@ -51,7 +51,8 @@ Here a user can see the product in  cart.
 
 Before Placing order Proceed to Checkout
 That but will redirected to Login / Sing up page 
-![Screenshot 2024-06-18 043035](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/22619244-4ac2-4e36-82a5-2d6f756196f8)
+
+![Uploading Screenshot 2024-06-18 043035.png…]()
 
 
 
