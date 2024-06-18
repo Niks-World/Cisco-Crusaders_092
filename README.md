@@ -37,6 +37,7 @@ Dark Mood
 
 
 Product Page
+
 ![Screenshot 2024-06-18 042542](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/88f97f5c-f52f-491a-8e3b-851635451d8d)
 
 In this page a user can add the  product nature, color, brand and price. Also a user can click on any product to place order or add to cart.
@@ -44,6 +45,7 @@ In this page a user can add the  product nature, color, brand and price. Also a 
 
 
 Adding to cart
+
 ![Screenshot 2024-06-18 042658](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/2347e5ae-ab14-4058-8db0-b8c72aa6c142)
 
 Here a user can see the product in  cart.
@@ -52,7 +54,8 @@ Here a user can see the product in  cart.
 Before Placing order Proceed to Checkout
 That but will redirected to Login / Sing up page 
 
-![Uploading Screenshot 2024-06-18 043035.png…]()
+![Screenshot 2024-06-18 043035](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/19f6741b-477b-4620-b22b-cef6f47cbd8a)
+
 
 
 
@@ -64,6 +67,7 @@ After selecting the address, user will be able to successfully place the order.
 Finally the order is placed.
 
 Our Footer 
+
 ![Screenshot 2024-06-18 043356](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/ce6dd1ad-8890-4505-88db-2f77c6cdc5cf)
 
 
