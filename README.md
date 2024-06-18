@@ -24,19 +24,20 @@ adding products in cart along with display of total price for all the products w
 
 Some of the glimpses of our work
 
-Landing Page
+<h1>Landing Page </h1> 
 
 ![Screenshot 2024-06-18 041613](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/7dcbd8d9-d1bb-402b-b796-adecd4838094)
 
 From here, a user can scroll to find Fitness Essentials banner which on clicking takes the user to fitness essentials page. This is a static page built which includes Sports products. A user can see them from left menu icon and clicking on all Sports link.
 
-Dark Mood 
+<h1> Dark Mood</h1> 
+
 ![Screenshot 2024-06-18 043448](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/dcc3a658-3f41-4270-a210-daad3084b761)
 
 
 
 
-Product Page
+<h1>Product Page <h1/>
 
 ![Screenshot 2024-06-18 042542](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/88f97f5c-f52f-491a-8e3b-851635451d8d)
 
@@ -52,7 +53,8 @@ Here a user can see the product in  cart.
 
 
 Before Placing order Proceed to Checkout
-That but will redirected to Login / Sing up page 
+That but will redirected to 
+<h1>Login / Sing up page <h1/>
 
 ![Screenshot 2024-06-18 043035](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/19f6741b-477b-4620-b22b-cef6f47cbd8a)
 
@@ -60,13 +62,14 @@ That but will redirected to Login / Sing up page
 
 
 
-After Checkout Order Placed and confirmantion 
+<h1>After Checkout Order Placed and confirmantion <h1/>
+  
 ![Screenshot 2024-06-18 043136](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/b11eaa8c-2a6c-4ba3-9239-209011f3c76c)
 
 After selecting the address, user will be able to successfully place the order.
 Finally the order is placed.
 
-Our Footer 
+<h1>Our Footer </h1>
 
 ![Screenshot 2024-06-18 043356](https://github.com/Niks-World/Cisco-Crusaders_092/assets/79000068/ce6dd1ad-8890-4505-88db-2f77c6cdc5cf)
 
@@ -74,9 +77,11 @@ Our Footer
 
 
 Running the project
-Clone the repository
-Find index.html file
-Copy the file path
-Paste in the browser
-Hit enter
-Now You can see the magic.
+<hr/>
+<br/>
+Clone the repository <br/>
+Find index.html file<br/>
+Copy the file path<br/>
+Paste in the browser<br/>
+Hit enter<br/>
+Now You can see the magic.<br/>
